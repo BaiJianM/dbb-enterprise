@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gientech.iot.user.biz.mapper.RolePermissionMapper">
+
+    <select id="getPermIdsByRoleIds" resultType="java.lang.Long">
+        SELECT r.id
+        FROM sys_role_permission rp
+        LEFT JOIN sys_role r ON r.id = rp.role_id
+        -- 在判断有无角色与权限的关联关系时，只判断删除状态，无论权限是否禁用都认为存在关联关系
+        WHERE r.is_delete = 0
+        AND rp.role_id IN
+        <foreach collection="roleIds" item="roleId" separator="," open="(" close=")">
+            #{roleId}
+        </foreach>
+    </select>
+
+    <select id="getRoleIdsByPermIds" resultType="java.lang.Long">
+        SELECT p.id
+        FROM sys_role_permission rp
+        LEFT JOIN sys_role p ON p.id = rp.permission_id
+        -- 在判断有无角色与权限的关联关系时，只判断删除状态，无论权限是否禁用都认为存在关联关系
+        WHERE p.is_delete = 0
+        AND rp.permission_id IN
+        <foreach collection="permIds" item="permId" separator="," open="(" close=")">
+            #{permId}
+        </foreach>
+    </select>
+</mapper>

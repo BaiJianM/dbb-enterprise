@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.gientech.iot.core.file.FileAutoConfiguration,\
+com.gientech.iot.core.GientechCoreAutoConfiguration

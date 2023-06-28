@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gientech.iot.user.biz.mapper.LogMapper">
+
+    <select id="search" resultType="com.gientech.iot.user.api.pojo.vo.LogSearchResultVO">
+        select
+        sl.*,
+        sl.id as log_id,
+        ss.system_name
+        from sys_log sl
+        left join sys_system ss on sl.system_id = ss.id
+        <where>
+            sl.is_delete = 0
+            <if test="dto.systemId != null">
+                and sl.system_id = #{dto.systemId}
+            </if>
+            <if test="dto.logType != null">
+                and sl.type = #{dto.logType.code}
+            </if>
+            <if test="dto.event != null and dto.event != ''">
+                and sl.event = #{dto.event}
+            </if>
+            <if test="dto.createUserCode != null and dto.createUserCode != ''">
+               and sl.create_user_code like concat('%', #{dto.createUserCode}, '%')
+            </if>
+            <if test="dto.startCreateTime != null">
+               and sl.create_time between #{dto.startCreateTime} and #{dto.endCreateTime}
+            </if>
+            <if test="dto.logIds != null and dto.logIds.size() > 0">
+                and sl.id in
+                <foreach collection="dto.logIds" item="id" separator="," open="(" close=")">
+                    #{id}
+                </foreach>
+            </if>
+            order by sl.create_time desc
+        </where>
+    </select>
+
+    <select id="getLogByParams" resultType="com.gientech.iot.user.biz.entity.SysLog">
+        SELECT
+            *
+        FROM
+            sys_log
+        WHERE
+            `event` IN
+            <foreach collection="eventCodes" item="code" separator="," open="(" close=")">
+                #{code}
+            </foreach>
+	        AND type = #{logType}
+	        AND create_time BETWEEN #{startDate} and #{endDate}
+    </select>
+
+    <select id="onlineUserPage" resultType="com.gientech.iot.user.api.pojo.vo.OnlineSearchResultVO">
+        select
+        sl.id online_id,
+        ss.system_name,
+        sl.create_user_code username,
+        sl.create_user_name real_name,
+        sl.ip_address,
+        sl.os,
+        sl.browser,
+        sl.create_time login_time
+        from sys_log sl
+        left join sys_system ss on sl.system_id = ss.id
+        where sl.id in (
+            select max(id) from sys_log
+            where is_delete = 0
+            and create_time > #{dto.startCreateTime}
+            group by create_user_code
+        )
+        and sl.event = #{dto.event}
+        <if test="dto.systemId != null">
+            and sl.system_id = #{dto.systemId}
+        </if>
+        <if test="dto.username != null and dto.username != ''">
+            and sl.create_user_code like concat('%', #{dto.username}, '%')
+        </if>
+        <if test="dto.ipAddress != null and dto.ipAddress != ''">
+            and sl.ip_address like concat('%', #{dto.ipAddress}, '%')
+        </if>
+        order by sl.create_time desc
+    </select>
+
+</mapper>

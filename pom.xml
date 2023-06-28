@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--项目标识需自定义-->
+    <artifactId>dbb</artifactId>
+    <groupId>top.dabaibai</groupId>
+    <version>1.0.0</version>
+    <name>dbb-framework</name>
+    <packaging>pom</packaging>
+    <description>A Framework For Enterprise</description>
+
+    <!--模块依赖-->
+    <modules>
+        <module>dbb-commons</module>
+        <module>dbb-component</module>
+        <module>dbb-gateway</module>
+        <module>dbb-user</module>
+        <module>dbb-demo</module>
+        <module>dbb-test</module>
+    </modules>
+
+    <properties>
+
+        <!--开发框架-->
+        <!--maven版本-->
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <maven.plugin.version>3.8.1</maven.plugin.version>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <!--jdk版本-->
+        <java.version>17</java.version>
+        <!--SpringBoot版本-->
+        <spring-boot.version>2.6.3</spring-boot.version>
+        <!--SpringCloud版本-->
+        <spring-cloud.version>2021.0.1</spring-cloud.version>
+        <!--SpringCloud Alibaba版本-->
+        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
+
+        <!--中间件-->
+        <!--elasticsearch版本-->
+        <elasticsearch.version>4.3.5</elasticsearch.version>
+        <!--数据库连接池-->
+        <druid.version>1.2.16</druid.version>
+        <!--xxl-job版本-->
+        <xxl-job.version>2.4.0</xxl-job.version>
+
+        <!--插件工具-->
+        <!--mybatis-plus版本-->
+        <mybatis-plus.version>3.5.2</mybatis-plus.version>
+        <!--多数据源版本-->
+        <dynamic-datasource.version>3.5.1</dynamic-datasource.version>
+        <!--websocket版本-->
+        <websocket.version>3.0.4</websocket.version>
+        <!--knife4j版本-->
+        <knife4j.version>4.1.0</knife4j.version>
+        <!--swagger注解版本-->
+        <swagger.annotations.version>2.2.8</swagger.annotations.version>
+        <!--jwt版本-->
+        <jwt.version>0.11.1</jwt.version>
+        <!--bitwalker版本-->
+        <bitwalker.version>1.21</bitwalker.version>
+        <!--hutool工具包版本-->
+        <hutool.version>5.8.15</hutool.version>
+        <!--阿里json工具包版本-->
+        <fastjson.version>2.0.32</fastjson.version>
+        <!--对象属性转换工具-->
+        <mapstruct-plus.version>1.2.5</mapstruct-plus.version>
+    </properties>
+
+    <!--依赖包管理器，提供子模块继承-->
+    <dependencyManagement>
+        <dependencies>
+            <!--spring boot 版本-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- spring cloud 版本-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--spring cloud alibaba 版本-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+            <optional>true</optional>
+        </dependency>
+        <!--2021版本的spring-cloud默认不加载bootstrap文件，如需加载，则引入额外依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--@Slf4j注解支持-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!--阿里JSON工具包-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <!-- 解析客户端操作系统、浏览器等 -->
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>${bitwalker.version}</version>
+        </dependency>
+        <!--hutool工具包-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
+        <!--配置文件元数据（使自定义配置类自动生成元数据用于配置时提示录入）-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--解决mac的启动dns解析报错-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-resolver-dns-native-macos</artifactId>
+            <scope>runtime</scope>
+            <!--intel芯片-->
+            <!--<classifier>osx-x86_64</classifier>-->
+            <!--<version>4.1.59.Final</version>-->
+            <!--M1芯片-->
+            <classifier>osx-aarch_64</classifier>
+            <version>4.1.77.Final</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <!--以下为mapstruct依赖的配置-->
+                    <!--<annotationProcessorPaths>-->
+                    <!--    <path>-->
+                    <!--        <groupId>io.github.linpeilie</groupId>-->
+                    <!--        <artifactId>mapstruct-plus-processor</artifactId>-->
+                    <!--        <version>${mapstruct-plus.version}</version>-->
+                    <!--    </path>-->
+                    <!--    &lt;!&ndash; 使用 Lombok 需要添加 &ndash;&gt;-->
+                    <!--    <path>-->
+                    <!--        <groupId>org.projectlombok</groupId>-->
+                    <!--        <artifactId>lombok</artifactId>-->
+                    <!--        <version>1.18.22</version>-->
+                    <!--    </path>-->
+                    <!--    &lt;!&ndash; Lombok 1.18.16 及以上需要添加，不然报错 &ndash;&gt;-->
+                    <!--    <path>-->
+                    <!--        <groupId>org.projectlombok</groupId>-->
+                    <!--        <artifactId>lombok-mapstruct-binding</artifactId>-->
+                    <!--        <version>0.2.0</version>-->
+                    <!--    </path>-->
+                    <!--</annotationProcessorPaths>-->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
