@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @description: Gateway网关启动类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:09:37
  */
 @EnableDiscoveryClient

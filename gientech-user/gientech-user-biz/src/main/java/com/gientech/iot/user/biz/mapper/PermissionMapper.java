@@ -20,7 +20,7 @@ public interface PermissionMapper extends BaseMapper<SysPermission> {
     /**
      * @param dto 入参
      * @description: 列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 10:23:54
      * @return: List<SysPermission>
      * @version: 1.0

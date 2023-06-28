@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @description: 自定义身份验证成功处理程序
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-26 20:32:59
  */
 @Slf4j

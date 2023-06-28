@@ -14,7 +14,7 @@ import static java.util.Arrays.stream;
 
 /**
  * @description: ReadWrite读写分离拦截器
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-02-19 20:09:05
  */
 @Slf4j
@@ -27,7 +27,7 @@ public class ReadWriteInterceptor implements Interceptor {
     /**
      * @param invocation sql执行数据
      * @description: 拦截select语句，并将未指定数据源的方法切换成slave从库数据源，如果使用@DS注解指定数据源则使用指定的数据源
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-19 20:09:35
      * @return: Object
      * @version: 1.0

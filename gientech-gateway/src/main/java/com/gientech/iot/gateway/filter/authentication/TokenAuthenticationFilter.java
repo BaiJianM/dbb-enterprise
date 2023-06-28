@@ -33,7 +33,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @description: 令牌身份验证过滤器
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-26 14:58:06
  */
 @Slf4j

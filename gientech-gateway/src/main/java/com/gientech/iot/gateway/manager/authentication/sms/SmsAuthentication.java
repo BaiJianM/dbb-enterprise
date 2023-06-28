@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 
 /**
  * @description: 短信登录验证信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-27 10:46:18
  */
 @Data

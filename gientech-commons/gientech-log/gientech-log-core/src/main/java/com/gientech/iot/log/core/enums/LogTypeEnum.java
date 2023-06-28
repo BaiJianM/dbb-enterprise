@@ -5,7 +5,7 @@ import lombok.Getter;
 
 /**
  * @description: 日志类型枚举
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-15 09:42:08
  */
 @Getter

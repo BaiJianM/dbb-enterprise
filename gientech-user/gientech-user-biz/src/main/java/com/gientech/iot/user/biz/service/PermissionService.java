@@ -39,7 +39,7 @@ public interface PermissionService extends IService<SysPermission> {
     /**
      * @param dto 权限信息更新传参
      * @description: 更新
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 16:11:17
      * @return: void
      * @version: 1.0
@@ -76,7 +76,7 @@ public interface PermissionService extends IService<SysPermission> {
     /**
      * @param systemId 系统标识
      * @description: 根据子系统id获取权限树
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-25 11:06:01
      * @return: List<PermissionTreeVO>
      * @version: 1.0
@@ -86,7 +86,7 @@ public interface PermissionService extends IService<SysPermission> {
     /**
      * @param roleId 角色id
      * @description: 通过角色id获取树下拉
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 09:58:32
      * @return: TreeSelectVO<PermissionTreeVO>
      * @version: 1.0

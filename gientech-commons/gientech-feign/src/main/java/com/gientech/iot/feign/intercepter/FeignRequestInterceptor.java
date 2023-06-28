@@ -7,7 +7,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 
 /**
  * @description: Feign请求拦截器（解决header丢失问题）
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-02-22 22:20:46
  */
 public class FeignRequestInterceptor implements RequestInterceptor {

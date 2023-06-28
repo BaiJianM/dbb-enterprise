@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 
 /**
  * @description: 账号认证信息转换器 exchange中获取登录信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-26 13:32:40
  */
 @Data

@@ -6,7 +6,7 @@ import lombok.Data;
 
 /**
  * @description: 用于生成token的用户信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:02:32
  */
 @Data

@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @description: 发生变化的数据信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-01 17:57:43
  */
 @Data

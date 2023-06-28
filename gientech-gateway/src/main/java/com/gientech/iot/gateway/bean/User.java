@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 /**
  * @description: 用户信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:02:32
  */
 @EqualsAndHashCode(callSuper = true)
@@ -38,7 +38,7 @@ public class User extends UserLoginVO implements Serializable, UserDetails {
 
     /**
      * @description: 用户账号是否未过期
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-18 12:54:11
      * @return: boolean
      * @version: 1.0
@@ -50,7 +50,7 @@ public class User extends UserLoginVO implements Serializable, UserDetails {
 
     /**
      * @description: 用户账号是否未被锁定
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-18 12:54:13
      * @return: boolean
      * @version: 1.0
@@ -62,7 +62,7 @@ public class User extends UserLoginVO implements Serializable, UserDetails {
 
     /**
      * @description: 用户凭证是否未过期
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-18 12:54:15
      * @return: boolean
      * @version: 1.0
@@ -74,7 +74,7 @@ public class User extends UserLoginVO implements Serializable, UserDetails {
 
     /**
      * @description: 用户账户是否已启用
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-18 12:54:17
      * @return: boolean
      * @version: 1.0

@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * @description: mybatis配置
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-03 09:22:32
  */
 @Data

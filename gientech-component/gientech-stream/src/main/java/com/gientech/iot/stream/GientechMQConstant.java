@@ -2,7 +2,7 @@ package com.gientech.iot.stream;
 
 /**
  * @description: 消息常量
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-03-10 16:50:36
  */
 public interface GientechMQConstant {

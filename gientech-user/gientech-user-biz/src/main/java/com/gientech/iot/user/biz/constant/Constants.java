@@ -2,7 +2,7 @@ package com.gientech.iot.user.biz.constant;
 
 /**
  * @description: 用户常量
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-05-23 20:45:38
  */
 public interface Constants {

@@ -16,7 +16,7 @@ import java.util.Objects;
 
 /**
  * @description: spring上下文
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-20 15:03:53
  */
 @Slf4j
@@ -28,7 +28,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
     /**
      * @param applicationContext 应用程序上下文
      * @description: 设置应用程序上下文
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:54
      * @return: void
      * @version: 1.0
@@ -43,7 +43,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
 
     /**
      * @description: 获取应用程序上下文
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:45
      * @return: ApplicationContext
      * @version: 1.0
@@ -55,7 +55,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
     /**
      * @param name 名字
      * @description: 通过name获取Bean
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:43
      * @return: Object
      * @version: 1.0
@@ -67,7 +67,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
     /**
      * @param clazz clazz
      * @description: 通过class获取Bean
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:41
      * @return: T
      * @version: 1.0
@@ -80,7 +80,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
      * @param name  名字
      * @param clazz clazz
      * @description: 通过name, 以及Clazz返回指定的Bean
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:38
      * @return: T
      * @version: 1.0
@@ -91,7 +91,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
 
     /**
      * @description: 获取请求
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:36
      * @return: HttpServletRequest
      * @version: 1.0
@@ -102,7 +102,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
 
     /**
      * @description: 获取响应
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:35
      * @return: HttpServletResponse
      * @version: 1.0
@@ -113,7 +113,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
 
     /**
      * @description: 清除SpringContextUtils中的ApplicationContext为Null.
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:12
      * @return: void
      * @version: 1.0
@@ -124,7 +124,7 @@ public class SpringContextUtils implements ApplicationContextAware, DisposableBe
 
     /**
      * @description: 实现DisposableBean接口, 在Context关闭时清理静态变量.
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:26:08
      * @return: void
      * @version: 1.0

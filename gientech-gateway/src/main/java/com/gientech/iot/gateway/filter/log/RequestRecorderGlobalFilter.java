@@ -26,7 +26,7 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * @description: 请求日志记录全局过滤器
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-06-05 10:36:34
  */
 @Slf4j
@@ -73,7 +73,7 @@ public class RequestRecorderGlobalFilter implements GlobalFilter, Ordered {
      * @param request   请求
      * @param logBuffer 日志缓冲区
      * @description: 记录原始请求逻辑
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-06-05 10:27:23
      * @return: Mono<Void>
      * @version: 1.0
@@ -123,7 +123,7 @@ public class RequestRecorderGlobalFilter implements GlobalFilter, Ordered {
      * @param logBuilder 日志建设者
      * @param response   响应
      * @description: 日志输出返回值
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-06-05 10:26:22
      * @return: Mono<Void>
      * @version: 1.0
@@ -154,7 +154,7 @@ public class RequestRecorderGlobalFilter implements GlobalFilter, Ordered {
     /**
      * @param contentType 内容类型
      * @description: 记录简单的常见的文本类型的request的body和response的body
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-06-05 10:26:40
      * @return: boolean
      * @version: 1.0
@@ -175,7 +175,7 @@ public class RequestRecorderGlobalFilter implements GlobalFilter, Ordered {
      * @param body      身体
      * @param charset   字符集
      * @description: 获取请求的参数
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-06-05 10:26:50
      * @return: Mono<Void>
      * @version: 1.0

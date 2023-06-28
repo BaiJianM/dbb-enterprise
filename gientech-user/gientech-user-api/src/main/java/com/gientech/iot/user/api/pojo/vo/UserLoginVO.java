@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * @description: 用户登录信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-08-16 09:54:28
  */
 @Data

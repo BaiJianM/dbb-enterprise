@@ -192,7 +192,7 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, SysPerm
 
     /**
      * @description: 初始化数据
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-04 13:00:56
      * @return: void
      * @version: 1.0

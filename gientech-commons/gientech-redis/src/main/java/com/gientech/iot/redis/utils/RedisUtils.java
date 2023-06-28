@@ -1615,7 +1615,7 @@ public class RedisUtils {
 
     /**
      * @description: 看门狗线程
-     * @author: 王强
+     * @author: 白剑民
      * @dateTime: 2022-08-24 23:43:24
      */
     class WatchDogThread implements Runnable {
@@ -1650,7 +1650,7 @@ public class RedisUtils {
      * @param value 锁的值
      * @param ttl   锁过期时间
      * @description: 看门狗
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-08-25 09:26:11
      * @return:
      * @version: 1.0
@@ -1668,7 +1668,7 @@ public class RedisUtils {
     /**
      * @param ttl key过期时间
      * @description: 获取续期速率
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-08-25 09:24:42
      * @return: @return long
      * @version: 1.0
@@ -1687,7 +1687,7 @@ public class RedisUtils {
      * @param requestId 请求id
      * @param ttl       锁过期时间
      * @description: 锁续期Lua脚本
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-08-25 09:25:14
      * @return: @return {@code Long }
      * @version: 1.0

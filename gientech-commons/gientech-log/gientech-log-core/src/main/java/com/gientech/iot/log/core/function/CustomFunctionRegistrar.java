@@ -16,7 +16,7 @@ import java.util.Map;
 
 /**
  * @description: 注册自定义函数
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-02 15:57:45
  */
 @Data
@@ -30,7 +30,7 @@ public class CustomFunctionRegistrar implements ApplicationContextAware {
     /**
      * @param applicationContext 应用程序上下文
      * @description: 扫描使用@LogRecordFunc注解申明的自定义函数
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-02 17:23:39
      * @return:
      * @version: 1.0
@@ -67,7 +67,7 @@ public class CustomFunctionRegistrar implements ApplicationContextAware {
     /**
      * @param context 上下文
      * @description: 注册
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-02 17:23:32
      * @return:
      * @version: 1.0
@@ -79,7 +79,7 @@ public class CustomFunctionRegistrar implements ApplicationContextAware {
     /**
      * @param method 待判断的方法
      * @description: 判断是否为静态方法
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-02 18:18:51
      * @return: @return boolean
      * @version: 1.0

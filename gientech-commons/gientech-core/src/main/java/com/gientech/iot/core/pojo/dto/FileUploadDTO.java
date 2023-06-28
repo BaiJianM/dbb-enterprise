@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @description: 文件上传入参
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 11:12:38
  */
 @Data

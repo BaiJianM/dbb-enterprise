@@ -37,7 +37,7 @@ public class LogController {
      * @param logType 日志类型
      * @param dto     日志搜索传参
      * @description: 日志搜索
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 17:11:23
      * @return: GientechResponse<PageResultVO < LogSearchResultVO>>
      * @version: 1.0
@@ -53,7 +53,7 @@ public class LogController {
     /**
      * @param logIds 日志id
      * @description: 日志删除
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 17:12:24
      * @return: GientechResponse<Void>
      * @version: 1.0
@@ -72,7 +72,7 @@ public class LogController {
      * @param logType 日志类型
      * @param dto     日志导出传参
      * @description: 日志导出
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 17:12:32
      * @return: GientechResponse<Void>
      * @version: 1.0
@@ -87,7 +87,7 @@ public class LogController {
     /**
      * @param logType 日志类型
      * @description: 清空日志
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 17:12:51
      * @return: GientechResponse<?>
      * @version: 1.0

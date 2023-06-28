@@ -15,7 +15,7 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * @description: 计算文件MD5工具类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 16:48:26
  */
 @Slf4j
@@ -24,7 +24,7 @@ public class FileMD5Utils {
     /**
      * @param file 文件
      * @description: 获取文件md5
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:48:29
      * @return: String
      * @version: 1.0
@@ -53,7 +53,7 @@ public class FileMD5Utils {
     /**
      * @param file 文件
      * @description: 获取文件md5
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:48:31
      * @return: String
      * @version: 1.0

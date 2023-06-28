@@ -21,7 +21,7 @@ import java.util.function.Predicate;
 
 /**
  * @description: 用户通过身份验证后，会通过该处理类校验是否有该资源的访问权限
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 21:47:52
  */
 @Slf4j

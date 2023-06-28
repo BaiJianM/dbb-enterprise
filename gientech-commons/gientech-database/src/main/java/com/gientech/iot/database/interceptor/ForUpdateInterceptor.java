@@ -27,7 +27,7 @@ import static java.util.Arrays.stream;
 
 /**
  * @description: 自定义悲观锁拦截器
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-02-19 20:09:05
  */
 @Slf4j

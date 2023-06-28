@@ -11,14 +11,14 @@ import java.util.Base64;
 
 /**
  * @description: RSA加密工具类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:08:52
  */
 public class RsaUtils {
     
     /**
      * @description: PrivateKey 私钥
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-17 22:47:58
      * @return: PrivateKey
      * @version: 1.0
@@ -64,7 +64,7 @@ public class RsaUtils {
 
     /**
      * @description: PublicKey 公钥
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-17 22:47:54
      * @return: PublicKey
      * @version: 1.0

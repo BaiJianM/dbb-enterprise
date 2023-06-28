@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @description: 自定义分区选择器（设置分区）
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-03-10 12:47:41
  */
 @Component

@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * @description: 日志记录
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-01 17:58:15
  */
 @Target({ElementType.FIELD, ElementType.TYPE})

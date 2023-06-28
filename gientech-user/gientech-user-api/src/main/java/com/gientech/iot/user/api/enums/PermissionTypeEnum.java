@@ -32,7 +32,7 @@ public enum PermissionTypeEnum {
 
     /**
      * @description: 是否是路由类型
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-25 12:29:53
      * @return: Boolean
      * @version: 1.0

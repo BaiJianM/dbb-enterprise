@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 /**
  * @description: 自定义函数对象差异
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-02 16:26:45
  */
 @Slf4j
@@ -71,7 +71,7 @@ public class CustomFunctionObjectDiff {
      * @param oldObject 原对象
      * @param newObject 新对象
      * @description: 计算并记录对象变更的属性
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-02 16:26:50
      * @return: @return {@code String }
      * @version: 1.0
@@ -108,7 +108,7 @@ public class CustomFunctionObjectDiff {
     /**
      * @param newObject 新对象
      * @description: 计算并记录新增的属性
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-02 16:26:53
      * @return: @return {@code String }
      * @version: 1.0
@@ -161,7 +161,7 @@ public class CustomFunctionObjectDiff {
      * @param oldObject 旧对象
      * @param newObject 新对象
      * @description: 获取差异值对象
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-02 18:20:24
      * @return: @return {@code DiffVO }
      * @version: 1.0
@@ -249,7 +249,7 @@ public class CustomFunctionObjectDiff {
     /**
      * @param clazz clazz
      * @description: 获取本类和父类所有字段
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-11-06 15:55:30
      * @return: Field[]
      * @version: 1.0
@@ -269,7 +269,7 @@ public class CustomFunctionObjectDiff {
      * @param clazz     clazz
      * @param fieldName 字段名称
      * @description: 根据class和字段名称获取字段信息
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-11-06 15:55:30
      * @return: Field
      * @version: 1.0

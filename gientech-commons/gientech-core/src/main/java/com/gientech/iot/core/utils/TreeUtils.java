@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 /**
  * @description: 树结构转换 (目标类需继承BaseTreeVO, 若未指定根节点ID, 则默认根节点ID为0)
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-07-28 20:50:57
  */
 public class TreeUtils {
@@ -18,7 +18,7 @@ public class TreeUtils {
     /**
      * @param source 源数据列表
      * @description: 将源数据列表转为树结构列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 21:24:41
      * @return: java.util.List<V>
      * @version: 1.0
@@ -31,7 +31,7 @@ public class TreeUtils {
      * @param rootIdList 根节点主键id列表
      * @param source     源数据列表
      * @description: 将源数据列表转为树结构列表并按传入的rootIdList作为根节点展示
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 20:51:14
      * @return: java.util.List<V>
      * @version: 1.0
@@ -45,7 +45,7 @@ public class TreeUtils {
      * @param source         源数据列表
      * @param targetSupplier 目标转换方法
      * @description: 将源数据列表转为树结构列表，并且按提供的目标转换方法进行属性赋值转换
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 21:24:41
      * @return: java.util.List<V>
      * @version: 1.0
@@ -62,7 +62,7 @@ public class TreeUtils {
      * @param targetSupplier 目标转换方法
      * @param callBack       回调方法（用于属性转换时的特殊转换）
      * @description: 将源数据列表转为树结构列表，并且按提供的目标转换方法进行属性赋值转换
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 21:24:41
      * @return: java.util.List<V>
      * @version: 1.0
@@ -80,7 +80,7 @@ public class TreeUtils {
      * @param callBack       回调方法（用于属性转换时的特殊转换）
      * @description: 将源数据列表转为树结构列表，并且按提供的目标转换方法进行属性赋值转换，
      * 并按传入的rootIdList作为根节点列出
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 21:24:41
      * @return: java.util.List<V>
      * @version: 1.0
@@ -95,7 +95,7 @@ public class TreeUtils {
      * @param rootIdList 根节点主键id列表
      * @param source     源数据列表
      * @description: 将源数据列表转为树结构列表，传入的rootIdList不作为根节点展示
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 20:51:14
      * @return: java.util.List<V>
      * @version: 1.0
@@ -111,7 +111,7 @@ public class TreeUtils {
      * @param targetSupplier 目标转换方法
      * @param callBack       回调方法（用于属性转换时的特殊转换）
      * @description: 将源数据列表转为树结构列表，并且按提供的目标转换方法进行属性赋值转换，传入的rootIdList不作为根节点展示
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 21:24:41
      * @return: java.util.List<V>
      * @version: 1.0
@@ -127,7 +127,7 @@ public class TreeUtils {
      * @param rootIdList 根节点主键id列表
      * @param source     源数据列表
      * @description: 带根节点判断的树结构转换方法
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 20:51:20
      * @return: java.util.List<V>
      * @version: 1.0
@@ -142,7 +142,7 @@ public class TreeUtils {
      * @param source     源数据列表
      * @param showParent 树结构列表中是否显示父级节点
      * @description: 带根节点判断的树结构转换方法
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 20:51:20
      * @return: java.util.List<V>
      * @version: 1.0
@@ -187,7 +187,7 @@ public class TreeUtils {
      * @param parentId    父级id
      * @param allDataList 所有数据列表
      * @description: 获取树结构的递归方法
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-07-28 20:51:31
      * @return: java.util.List<V>
      * @version: 1.0

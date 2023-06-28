@@ -37,7 +37,7 @@ import java.util.function.Consumer;
 
 /**
  * @description: 系统日志切面
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-01 17:49:18
  */
 @Aspect
@@ -88,7 +88,7 @@ public class SystemLogAspect {
     /**
      * @param pjp 切点信息
      * @description: 环绕通知
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-02 16:29:36
      * @return: @return {@code Object }
      * @version: 1.0
@@ -254,7 +254,7 @@ public class SystemLogAspect {
      * @param annotation 注释
      * @param joinPoint  连接点
      * @description: 解析注解中定义的spel表达式
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-02 16:30:21
      * @return: @return {@code LogDTO }
      * @version: 1.0
@@ -429,7 +429,7 @@ public class SystemLogAspect {
     /**
      * @param joinPoint 切点
      * @description: 获取切点方法
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-03 22:35:36
      * @return: @return {@code Method }
      * @version: 1.0

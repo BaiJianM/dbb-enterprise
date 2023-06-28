@@ -121,7 +121,7 @@ public class ExcelUtil<T> {
      * @param extra    额外自定义填充数据
      * @param template 模板
      * @description: 模板导出excel
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-03-15 11:35:57
      * @return: void
      * @version: 1.0
@@ -139,7 +139,7 @@ public class ExcelUtil<T> {
      * @param template 模板
      * @param handler  自定义处理器
      * @description: 模板导出excel
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-03-15 11:35:57
      * @return: void
      * @version: 1.0
@@ -177,7 +177,7 @@ public class ExcelUtil<T> {
      * @param template 模板
      * @param handler  自定义处理器
      * @description: 多sheet模板导出excel
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-03-15 11:35:57
      * @return: void
      * @version: 1.0

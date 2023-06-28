@@ -15,7 +15,7 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * @description: 记录服务器http响应装饰
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-06-05 10:25:06
  */
 @Slf4j

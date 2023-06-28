@@ -5,7 +5,7 @@ import org.springframework.security.core.SpringSecurityCoreVersion;
 
 /**
  * @description: 用户授权信息，用于存放用户登陆后拥有的权限
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:03:05
  */
 public class UserGrantedAuthority implements GrantedAuthority {

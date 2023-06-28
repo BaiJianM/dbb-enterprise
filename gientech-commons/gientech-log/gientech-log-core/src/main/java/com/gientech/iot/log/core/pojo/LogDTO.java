@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @description: 日志信息dto
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-01 17:54:02
  */
 @Data

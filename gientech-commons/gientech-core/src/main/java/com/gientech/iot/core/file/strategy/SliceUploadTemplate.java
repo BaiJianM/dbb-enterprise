@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  * @description: 分片上传模板
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 16:45:45
  */
 @Slf4j
@@ -27,7 +27,7 @@ public abstract class SliceUploadTemplate implements SliceUploadStrategy {
     /**
      * @param param 文件上传参数
      * @description: 上传
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:45:35
      * @return: boolean
      * @version: 1.0
@@ -37,7 +37,7 @@ public abstract class SliceUploadTemplate implements SliceUploadStrategy {
     /**
      * @param param 文件上传参数
      * @description: 创建tmp文件
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 11:32:29
      * @return: File
      * @version: 1.0
@@ -72,7 +72,7 @@ public abstract class SliceUploadTemplate implements SliceUploadStrategy {
      * @param param         文件上传参数
      * @param uploadDirPath 上传dir路径
      * @description: 检查并修改文件上传进度
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:45:03
      * @return: boolean
      * @version: 1.0
@@ -113,7 +113,7 @@ public abstract class SliceUploadTemplate implements SliceUploadStrategy {
      * @param confFile      配置文件
      * @param isComplete    是否完整
      * @description: 把上传进度信息存进redis
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:45:06
      * @return: boolean
      * @version: 1.0
@@ -138,7 +138,7 @@ public abstract class SliceUploadTemplate implements SliceUploadStrategy {
      * @param fileName 文件名称
      * @param tmpFile  tmp文件
      * @description: 保存文件操作
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:45:09
      * @return: FileUploadVO
      * @version: 1.0
@@ -162,7 +162,7 @@ public abstract class SliceUploadTemplate implements SliceUploadStrategy {
      * @param toBeRenamed   将要修改名字的文件
      * @param toFileNewName 新的名字
      * @description: 文件重命名
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:45:11
      * @return: FileUploadVO
      * @version: 1.0

@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono;
 
 /**
  * @description: 本类为SpringCloud Gateway中设置允许跨域请求的过滤器。
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:04:36
  */
 @Slf4j

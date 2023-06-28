@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
 
 /**
  * @description: 动态路由信息出参
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-24 17:03:45
  */
 @EqualsAndHashCode(callSuper = false)
@@ -41,7 +41,7 @@ public class RouterTreeResultVO extends BaseTreeVO {
 
     /**
      * @description: 获取路径
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-25 15:28:40
      * @return: String
      * @version: 1.0
@@ -61,7 +61,7 @@ public class RouterTreeResultVO extends BaseTreeVO {
 
     /**
      * @description: 获取组件
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-25 15:28:37
      * @return: String
      * @version: 1.0

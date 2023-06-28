@@ -31,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @description: SpringSecurity配置类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:02:25
  */
 @Component

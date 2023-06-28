@@ -13,7 +13,7 @@ import java.util.Date;
 
 /**
  * @description: Token工具类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:09:06
  */
 public class TokenUtils implements Serializable {
@@ -25,7 +25,7 @@ public class TokenUtils implements Serializable {
     /**
      * @param user 用户信息
      * @description: 生成 Token 字符串
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-17 21:42:47
      * @return: String
      * @version: 1.0
@@ -53,7 +53,7 @@ public class TokenUtils implements Serializable {
     /**
      * @param token Token 字符串
      * @description: 验证 Token ，并获取到用户名和用户权限信息
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-17 21:42:18
      * @return: User
      * @version: 1.0

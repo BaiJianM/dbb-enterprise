@@ -104,7 +104,7 @@ public class PermissionController {
 
     /**
      * @description: 获取权限信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-10-31 13:42:06
      * @return: com.gientech.iot.global.response.GientechResponse<java.util.List <
             * com.gientech.iot.user.api.pojo.vo.PermissionSearchResultVO>>
@@ -137,7 +137,7 @@ public class PermissionController {
     /**
      * @param roleId 角色id
      * @description: 根据角色id获取角色其下权限树下拉
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 10:23:04
      * @return: GientechResponse<TreeSelectVO < PermissionTreeVO>>
      * @version: 1.0

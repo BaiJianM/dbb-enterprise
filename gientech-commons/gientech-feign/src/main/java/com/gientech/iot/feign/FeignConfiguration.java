@@ -29,7 +29,7 @@ import java.util.Collections;
 
 /**
  * @description: feign客户端配置
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-24 11:59:28
  */
 @Configuration

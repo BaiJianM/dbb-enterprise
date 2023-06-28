@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * @description: 基地用户信息出参
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-05-24 12:15:37
  */
 @Data

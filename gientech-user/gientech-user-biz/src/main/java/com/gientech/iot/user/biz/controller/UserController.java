@@ -110,7 +110,7 @@ public class UserController {
 
     /**
      * @description: 登录成功
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 12:05:50
      * @return: void
      * @version: 1.0
@@ -132,7 +132,7 @@ public class UserController {
 
     /**
      * @description: 注销成功
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 12:05:52
      * @return: void
      * @version: 1.0
@@ -235,7 +235,7 @@ public class UserController {
     /**
      * @param dto 获取用户分页入参
      * @description: 获取用户分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-24 10:01:22
      * @return: GientechResponse<PageResultVO < UserInfoVO>>
      * @version: 1.0
@@ -452,7 +452,7 @@ public class UserController {
     /**
      * @param dto 查询入参
      * @description: 获取用户授权角色信息分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:23:26
      * @return: GientechResponse<PageResultVO < RoleAuthUserVO>>
      * @version: 1.0
@@ -466,7 +466,7 @@ public class UserController {
     /**
      * @param dto 查询入参
      * @description: 获取角色未授权用户信息分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:23:26
      * @return: GientechResponse<PageResultVO < RoleAuthUserVO>>
      * @version: 1.0
@@ -480,7 +480,7 @@ public class UserController {
     /**
      * @param dto 取消入参
      * @description: 角色取消授权用户
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:23:26
      * @return: GientechResponse<PageResultVO < RoleAuthUserVO>>
      * @version: 1.0
@@ -495,7 +495,7 @@ public class UserController {
     /**
      * @param dto 入参
      * @description: 分配用户角色
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:47:53
      * @return: GientechResponse<Void>
      * @version: 1.0

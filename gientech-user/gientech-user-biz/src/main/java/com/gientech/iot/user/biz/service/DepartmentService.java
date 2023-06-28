@@ -43,7 +43,7 @@ public interface DepartmentService extends IService<SysDepartment> {
     /**
      * @param departmentId 部门id
      * @description: 部门详情
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 14:32:05
      * @return: DepartmentDetailResultVO
      * @version: 1.0

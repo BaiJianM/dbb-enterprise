@@ -32,7 +32,7 @@ public interface LogService extends IService<SysLog> {
     /**
      * @param ids id
      * @description: 删除
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 15:09:26
      * @return: void
      * @version: 1.0
@@ -59,7 +59,7 @@ public interface LogService extends IService<SysLog> {
     /**
      * @param dto 入参
      * @description: 在线用户页面
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-31 12:52:07
      * @return: PageResultVO<OnlineSearchResultVO>
      * @version: 1.0

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @description: Swagger配置类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-18 13:11:10
  */
 @Configuration

@@ -25,7 +25,7 @@ public interface UserMapper extends BaseMapper<SysUser> {
      * @param page 页面
      * @param dto  入参
      * @description: 页面
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-24 13:35:51
      * @return: Page<SysUser>
      * @version: 1.0

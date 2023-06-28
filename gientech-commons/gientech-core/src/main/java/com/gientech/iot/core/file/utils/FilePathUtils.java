@@ -12,7 +12,7 @@ import java.util.Objects;
 
 /**
  * @description: 文件路径工具
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 16:20:23
  */
 @Component
@@ -23,7 +23,7 @@ public class FilePathUtils {
 
     /**
      * @description: 初始化时创建文件上传根路径文件夹
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 11:46:29
      * @return: void
      * @version: 1.0
@@ -37,7 +37,7 @@ public class FilePathUtils {
 
     /**
      * @description: 获取根路径
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:40:48
      * @return: String
      * @version: 1.0
@@ -49,7 +49,7 @@ public class FilePathUtils {
     /**
      * @param param 文件上传参数
      * @description: 根据文件上传参数获取文件保存路径
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:40:50
      * @return: String
      * @version: 1.0

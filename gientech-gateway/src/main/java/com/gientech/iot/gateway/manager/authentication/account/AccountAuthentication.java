@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  * @description: 账号登录验证信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-27 10:46:21
  */
 @Data

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @description: xxl-job 配置
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-02-13 12:39:58
  */
 @Slf4j

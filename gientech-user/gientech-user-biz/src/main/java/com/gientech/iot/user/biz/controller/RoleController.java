@@ -57,7 +57,7 @@ public class RoleController {
     /**
      * @param roleId 角色id
      * @description: 角色信息详情
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:36:37
      * @return: GientechResponse<RoleDetailResultVO>
      * @version: 1.0
@@ -108,7 +108,7 @@ public class RoleController {
     /**
      * @param dto 角色信息列表传参
      * @description: 角色信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:36:37
      * @return: GientechResponse<List < RoleSearchResultVO>>
      * @version: 1.0
@@ -122,7 +122,7 @@ public class RoleController {
     /**
      * @param dto 角色信息分页传参
      * @description: 角色信息分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:36:37
      * @return: GientechResponse<PageResultVO < RoleSearchResultVO>>
      * @version: 1.0
@@ -172,7 +172,7 @@ public class RoleController {
     /**
      * @param dto 查询入参
      * @description: 获取角色授权用户信息分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:23:26
      * @return: GientechResponse<PageResultVO < RoleAuthUserVO>>
      * @version: 1.0
@@ -186,7 +186,7 @@ public class RoleController {
     /**
      * @param dto 查询入参
      * @description: 获取角色未授权用户信息分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:23:26
      * @return: GientechResponse<PageResultVO < RoleAuthUserVO>>
      * @version: 1.0
@@ -200,7 +200,7 @@ public class RoleController {
     /**
      * @param dto 取消入参
      * @description: 角色取消授权用户
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:23:26
      * @return: GientechResponse<PageResultVO < RoleAuthUserVO>>
      * @version: 1.0
@@ -215,7 +215,7 @@ public class RoleController {
     /**
      * @param dto 入参
      * @description: 分配用户角色
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:47:53
      * @return: GientechResponse<Void>
      * @version: 1.0

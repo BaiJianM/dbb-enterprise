@@ -19,7 +19,7 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * @description: 用户身份认证成功，但无访问该资源权限的处理类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 21:46:28
  */
 @Slf4j

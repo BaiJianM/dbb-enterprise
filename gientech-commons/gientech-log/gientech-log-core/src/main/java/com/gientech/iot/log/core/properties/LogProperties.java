@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * @description: 自定义日志记录属性配置
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-02 17:24:09
  */
 @Data
@@ -46,7 +46,7 @@ public class LogProperties {
 
     /**
      * @description: 线程池属性
-     * @author: 王强
+     * @author: 白剑民
      * @dateTime: 2022-09-02 18:19:33
      */
     @Data

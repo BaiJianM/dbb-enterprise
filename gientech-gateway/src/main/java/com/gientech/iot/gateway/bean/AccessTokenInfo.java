@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * @description: 访问令牌信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-11-04 11:32:06
  */
 @Data

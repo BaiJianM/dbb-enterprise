@@ -13,7 +13,7 @@ import java.io.RandomAccessFile;
 
 /**
  * @description: 随机访问上传策略
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 16:42:43
  */
 @Slf4j

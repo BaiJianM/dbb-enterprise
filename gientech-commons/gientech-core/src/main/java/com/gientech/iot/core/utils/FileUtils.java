@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 
 /**
  * @description: 文件工具
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 13:49:04
  */
 @Slf4j
@@ -33,7 +33,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
      * @param oldPath 旧路径
      * @param newPath 新路径
      * @description: 移动文件
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:15:32
      * @return: void
      * @version: 1.0
@@ -62,7 +62,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
      * @param oldPath 旧路径
      * @param newPath 新路径
      * @description: 复制文件
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:15:36
      * @return: void
      * @version: 1.0
@@ -85,7 +85,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param fileName 文件名称
      * @description: 获取含扩展名的文件名（不包含path路径）
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:15:40
      * @return: String
      * @version: 1.0
@@ -103,7 +103,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param fileName 文件名称
      * @description: 获取没有扩展名的文件名
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:15:51
      * @return: String
      * @version: 1.0
@@ -117,7 +117,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param fileName 文件名称
      * @description: 获取扩展名
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:15:54
      * @return: String
      * @version: 1.0
@@ -134,7 +134,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
      * @param fileName 文件名称
      * @param ext      ext
      * @description: 判断是否同为扩展名
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:15:56
      * @return: boolean
      * @version: 1.0
@@ -146,7 +146,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param fileName 文件名称
      * @description: 判断是否存在扩展名
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:05
      * @return: boolean
      * @version: 1.0
@@ -158,7 +158,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param ext ext
      * @description: 得到正确的扩展名
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:07
      * @return: String
      * @version: 1.0
@@ -171,7 +171,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
      * @param fileName 文件名称
      * @param ext      ext
      * @description: 向path中填充扩展名(如果没有或不同的话)
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:10
      * @return: String
      * @version: 1.0
@@ -191,7 +191,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param fileName 文件名称
      * @description: 判断是否是文件PATH
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:13
      * @return: boolean
      * @version: 1.0
@@ -203,7 +203,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param fileName 文件名称
      * @description: 判断是否是文件夹PATH
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:16
      * @return: boolean
      * @version: 1.0
@@ -220,7 +220,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param path 路径
      * @description: 链接PATH前处理
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:19
      * @return: String
      * @version: 1.0
@@ -240,7 +240,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param path 路径
      * @description: 链接PATH后处理
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:28
      * @return: String
      * @version: 1.0
@@ -260,7 +260,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param path 路径
      * @description: 链接PATH前后处理，得到准确的链接PATH
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:37
      * @return: String
      * @version: 1.0
@@ -275,7 +275,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param paths 路径
      * @description: 通过数组完整链接PATH
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:39
      * @return: String
      * @version: 1.0
@@ -291,7 +291,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param path 路径
      * @description: 去除首尾斜杠 path
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:46
      * @return: String
      * @version: 1.0
@@ -318,7 +318,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param filepath filepath
      * @description: del文件
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:50
      * @return: void
      * @version: 1.0
@@ -349,7 +349,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param filePaths 文件路径
      * @description: del文件列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:16:57
      * @return: void
      * @version: 1.0
@@ -363,7 +363,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param filePath 文件路径
      * @description: 分离路径
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:17:00
      * @return: List<String>
      * @version: 1.0
@@ -384,7 +384,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param filePath 文件路径
      * @description: 获取父路径
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:17:03
      * @return: String
      * @version: 1.0
@@ -401,7 +401,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
      * @param directoryPath  需要遍历的文件夹路径
      * @param isAddDirectory 是否将子文件夹的路径也添加到list集合中
      * @description: 获取路径下的所有文件/文件夹
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:17:06
      * @return: List<String>
      * @version: 1.0
@@ -433,7 +433,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
      * @param request  请求
      * @param response 响应
      * @description: 下载文件
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:17:09
      * @return: void
      * @version: 1.0
@@ -506,7 +506,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param str str
      * @description: 是否base64
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:17:36
      * @return: boolean
      * @version: 1.0
@@ -519,7 +519,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param closeable closeable
      * @description: 关闭
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:17:38
      * @return: void
      * @version: 1.0
@@ -539,7 +539,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
      * @param mappedByteBuffer 映射字节缓冲区
      * @description: 在MappedByteBuffer释放后再对它进行读操作的话就会引发jvm crash，
      * 在并发情况下很容易发生 正在释放时另一个线程正开始读取，于是crash就发生了。所以为了系统稳定性释放前一般需要检 查是否还有线程在读或写
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:17:41
      * @return: void
      * @version: 1.0
@@ -573,7 +573,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
     /**
      * @param buffer 缓冲
      * @description: 清洁
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:18:17
      * @return: void
      * @version: 1.0
@@ -598,7 +598,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils {
      * @param in         在
      * @param byteBuffer 字节缓冲区
      * @description: 关闭
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 09:18:20
      * @return: void
      * @version: 1.0

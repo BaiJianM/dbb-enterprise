@@ -24,7 +24,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @description: 文件上传工具
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 10:47:56
  */
 @Slf4j
@@ -53,7 +53,7 @@ public class FileUploadUtils {
     /**
      * @param dto 入参
      * @description: 上传
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 11:43:23
      * @return: FileUploadVO
      * @version: 1.0
@@ -82,7 +82,7 @@ public class FileUploadUtils {
     /**
      * @param dto 入参
      * @description: 分片上传
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 11:43:26
      * @return: FileUploadVO
      * @version: 1.0
@@ -100,7 +100,7 @@ public class FileUploadUtils {
     /**
      * @param dto 入参
      * @description: 检查文件md5
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-20 11:43:34
      * @return: FileUploadVO
      * @version: 1.0
@@ -121,7 +121,7 @@ public class FileUploadUtils {
      * @param processing 处理
      * @param value      检测值
      * @description: 填充返回文件内容信息
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-19 16:40:45
      * @return: FileUploadVO
      * @version: 1.0
@@ -146,7 +146,7 @@ public class FileUploadUtils {
 
     /**
      * @description: 文件上传
-     * @author: 王强
+     * @author: 白剑民
      * @dateTime: 2023-04-20 11:43:55
      */
     public static class FileUploadCallable implements Callable<FileUploadVO> {

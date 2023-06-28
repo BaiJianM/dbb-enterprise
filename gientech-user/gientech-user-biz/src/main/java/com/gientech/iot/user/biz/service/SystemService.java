@@ -59,7 +59,7 @@ public interface SystemService extends IService<SysSystem> {
     /**
      * @param dto 入参
      * @description: 子系统信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:32:05
      * @return: List<RoleSearchResultVO>
      * @version: 1.0
@@ -69,7 +69,7 @@ public interface SystemService extends IService<SysSystem> {
     /**
      * @param dto 入参
      * @description: 子系统信息分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:32:05
      * @return: PageResultVO<RoleSearchResultVO>
      * @version: 1.0

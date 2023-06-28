@@ -20,7 +20,7 @@ import reactor.core.publisher.Mono;
 
 /**
  * @description: 网关全局异常处理
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-25 21:01:03
  */
 @Slf4j

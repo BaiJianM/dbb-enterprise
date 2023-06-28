@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  * @description: 文件上传出参
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 11:12:46
  */
 @Builder

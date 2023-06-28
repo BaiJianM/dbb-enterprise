@@ -5,7 +5,7 @@ import org.springframework.core.NamedThreadLocal;
 
 /**
  * @description: 获取当前用户信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-15 09:12:51
  */
 public class UserInfoUtils {
@@ -17,7 +17,7 @@ public class UserInfoUtils {
 
     /**
      * @description: 获取当前登录用户信息
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-14 17:14:10
      * @return: UserLoginVO
      * @version: 1.0
@@ -29,7 +29,7 @@ public class UserInfoUtils {
     /**
      * @param vo 用户信息
      * @description: 设置当前登录用户信息
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-14 17:14:13
      * @return: void
      * @version: 1.0
@@ -40,7 +40,7 @@ public class UserInfoUtils {
 
     /**
      * @description: 清除当前登录用户信息（防止内存泄露）
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-14 17:14:22
      * @return: void
      * @version: 1.0
@@ -51,7 +51,7 @@ public class UserInfoUtils {
 
     /**
      * @description: 获取登录用户id
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-14 17:14:26
      * @return: Long
      * @version: 1.0
@@ -62,7 +62,7 @@ public class UserInfoUtils {
 
     /**
      * @description: 获取登录用户子系统id
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-14 17:14:26
      * @return: Long
      * @version: 1.0
@@ -73,7 +73,7 @@ public class UserInfoUtils {
 
     /**
      * @description: 获取登录用户ip
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-14 17:14:27
      * @return: String
      * @version: 1.0

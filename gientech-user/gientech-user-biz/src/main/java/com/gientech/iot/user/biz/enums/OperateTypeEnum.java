@@ -2,7 +2,7 @@ package com.gientech.iot.user.biz.enums;
 
 /**
  * @description: 操作类型枚举类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-05-30 12:32:13
  */
 public enum OperateTypeEnum {

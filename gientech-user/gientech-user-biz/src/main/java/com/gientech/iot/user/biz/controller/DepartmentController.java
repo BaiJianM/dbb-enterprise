@@ -41,7 +41,7 @@ public class DepartmentController {
 
     /**
      * @description: 获取部门编号
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 20:38:09
      * @return: GientechResponse<String>
      * @version: 1.0
@@ -70,7 +70,7 @@ public class DepartmentController {
     /**
      * @param departmentId 部门id
      * @description: 部门详情
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 14:05:09
      * @return: GientechResponse<PageResultVO < DepartmentSearchResultVO>>
      * @version: 1.0
@@ -121,7 +121,7 @@ public class DepartmentController {
     /**
      * @param dto 查询部门信息传参
      * @description: 查询部门信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 14:05:09
      * @return: GientechResponse<PageResultVO < DepartmentSearchResultVO>>
      * @version: 1.0
@@ -135,7 +135,7 @@ public class DepartmentController {
     /**
      * @param dto 查询部门信息传参
      * @description: 查询部门信息树
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 14:05:09
      * @return: GientechResponse<PageResultVO < DepartmentSearchResultVO>>
      * @version: 1.0

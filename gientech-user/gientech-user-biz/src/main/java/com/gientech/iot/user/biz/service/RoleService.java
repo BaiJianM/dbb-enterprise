@@ -58,7 +58,7 @@ public interface RoleService extends IService<SysRole> {
     /**
      * @param dto 入参
      * @description: 角色信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:32:05
      * @return: List<RoleSearchResultVO>
      * @version: 1.0
@@ -68,7 +68,7 @@ public interface RoleService extends IService<SysRole> {
     /**
      * @param dto 入参
      * @description: 角色信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:32:05
      * @return: PageResultVO<RoleSearchResultVO>
      * @version: 1.0
@@ -89,7 +89,7 @@ public interface RoleService extends IService<SysRole> {
     /**
      * @param dto 入参
      * @description: 角色授权用户信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:18:48
      * @return: PageResultVO<RoleAuthUserVO>
      * @version: 1.0
@@ -99,7 +99,7 @@ public interface RoleService extends IService<SysRole> {
     /**
      * @param dto 入参
      * @description: 角色授权用户信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:18:48
      * @return: PageResultVO<RoleAuthUserVO>
      * @version: 1.0
@@ -109,7 +109,7 @@ public interface RoleService extends IService<SysRole> {
     /**
      * @param dto 入参
      * @description: 角色授权用户信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:18:48
      * @return: PageResultVO<RoleAuthUserVO>
      * @version: 1.0
@@ -119,7 +119,7 @@ public interface RoleService extends IService<SysRole> {
     /**
      * @param dto 入参
      * @description: 角色授权用户
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-23 12:43:44
      * @return: void
      * @version: 1.0

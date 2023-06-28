@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * @description: 权限Meta信息入参
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-24 17:03:45
  */
 @Data

@@ -12,7 +12,7 @@ import java.security.spec.X509EncodedKeySpec;
 
 /**
  * @description: RSA加密工具类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 16:08:52
  */
 public class RSAUtils {

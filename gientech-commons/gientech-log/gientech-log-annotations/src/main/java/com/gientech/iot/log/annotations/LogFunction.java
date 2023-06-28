@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 
 /**
  * @description: 日志记录函数
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-02 16:28:58
  */
 @Target({ElementType.TYPE,ElementType.METHOD})

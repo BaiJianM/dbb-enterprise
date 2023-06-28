@@ -19,7 +19,7 @@ public interface DepartmentMapper extends BaseMapper<SysDepartment> {
     /**
      * @param dto 入参
      * @description: 列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-29 10:23:49
      * @return: List<SysDepartment>
      * @version: 1.0

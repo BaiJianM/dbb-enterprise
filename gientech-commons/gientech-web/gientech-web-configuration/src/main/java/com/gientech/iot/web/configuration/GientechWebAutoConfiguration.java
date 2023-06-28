@@ -132,7 +132,7 @@ public class GientechWebAutoConfiguration {
         /**
          * @param registry 注册表
          * @description: 添加拦截器
-         * @author: 王强
+         * @author: 白剑民
          * @date: 2023-02-14 17:26:00
          * @return: void
          * @version: 1.0

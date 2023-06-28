@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @description: 自定义分区键提取器（获取分区标识）
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-03-10 12:47:00
  */
 @Component

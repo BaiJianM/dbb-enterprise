@@ -16,7 +16,7 @@ public interface PasswordPolicyMapper extends BaseMapper<SysPasswordPolicy> {
     /**
      * @param enterpriseId 企业/机构id
      * @description: 通过企业/机构id获取对应的密码策略
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-21 11:54:45
      * @return: com.gientech.iot.user.entity.SysPasswordPolicy
      * @version: 1.0

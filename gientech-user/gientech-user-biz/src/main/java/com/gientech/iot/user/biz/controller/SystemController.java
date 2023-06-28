@@ -57,7 +57,7 @@ public class SystemController {
     /**
      * @param systemId 子系统id
      * @description: 子系统信息详情
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:36:37
      * @return: GientechResponse<SystemDetailResultVO>
      * @version: 1.0
@@ -108,7 +108,7 @@ public class SystemController {
     /**
      * @param dto 子系统信息列表传参
      * @description: 子系统信息列表
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:36:37
      * @return: GientechResponse<List < SystemSearchResultVO>>
      * @version: 1.0
@@ -122,7 +122,7 @@ public class SystemController {
     /**
      * @param dto 子系统信息分页传参
      * @description: 子系统信息分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-22 17:36:37
      * @return: GientechResponse<PageResultVO < SystemSearchResultVO>>
      * @version: 1.0

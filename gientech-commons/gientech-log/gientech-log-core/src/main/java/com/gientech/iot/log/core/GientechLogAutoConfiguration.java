@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Import;
 
 /**
  * @description: 日志记录自动配置
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-02 17:23:51
  */
 @Slf4j
@@ -41,7 +41,7 @@ public class GientechLogAutoConfiguration {
 
     /**
      * @description: 注册自定义方法
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-03 22:39:06
      * @return: @return {@code CustomFunctionRegistrar }
      * @version: 1.0

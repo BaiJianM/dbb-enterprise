@@ -7,7 +7,7 @@ import lombok.Data;
 
 /**
  * @description: 权限详情VO
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022/10/31 14:47
  */
 @Data

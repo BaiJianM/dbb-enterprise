@@ -22,7 +22,7 @@ public class SwaggerProperties {
     /**
      * 作者
      */
-    private String author = "白剑民/王强";
+    private String author = "白剑民/白剑民";
     /**
      * 联系地址
      */

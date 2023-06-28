@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 /**
  * @description: 文件检查md5状态
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-19 15:56:27
  */
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)

@@ -54,7 +54,7 @@ public interface LogMapper extends BaseMapper<SysLog> {
      * @param page 分页参数
      * @param dto  在线用户搜索传参
      * @description: 在线用户页面
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-31 11:47:04
      * @return: IPage<OnlineSearchResultVO>
      * @version: 1.0

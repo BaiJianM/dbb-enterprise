@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
 
 /**
  * @description: 重复请求切面
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-28 23:53:32
  */
 @Order(-1)
@@ -31,7 +31,7 @@ public class RepeatRequestAspect {
     /**
      * @param joinPoint 切点
      * @description: 接口幂等校验
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-26 10:48:48
      * @return: void
      * @version: 1.0
@@ -50,7 +50,7 @@ public class RepeatRequestAspect {
     /**
      * @param joinPoint 连接点
      * @description: 获取方法中申明的注解
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-26 10:48:53
      * @return: RepeatRequest
      * @version: 1.0

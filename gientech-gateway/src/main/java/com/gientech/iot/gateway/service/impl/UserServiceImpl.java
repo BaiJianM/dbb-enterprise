@@ -14,7 +14,7 @@ import org.springframework.util.MultiValueMap;
 
 /**
  * @description: 用户信息服务impl
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 22:11:03
  */
 @Slf4j

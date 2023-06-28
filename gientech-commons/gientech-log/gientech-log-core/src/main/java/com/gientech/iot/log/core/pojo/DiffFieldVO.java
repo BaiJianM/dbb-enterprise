@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @description: 发生变化的字段信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-01 17:57:19
  */
 @Data

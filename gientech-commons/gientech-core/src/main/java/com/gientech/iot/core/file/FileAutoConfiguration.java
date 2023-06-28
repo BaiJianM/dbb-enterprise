@@ -13,7 +13,7 @@ import javax.annotation.PostConstruct;
 
 /**
  * @description: 文件自动配置
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2023-04-20 10:53:49
  */
 @Configuration

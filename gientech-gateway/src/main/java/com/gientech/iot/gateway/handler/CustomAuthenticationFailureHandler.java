@@ -18,7 +18,7 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * @description: 用户身份认证失败后的处理类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 21:46:28
  */
 @Slf4j

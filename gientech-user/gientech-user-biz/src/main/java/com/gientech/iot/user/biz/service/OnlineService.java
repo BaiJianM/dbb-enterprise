@@ -16,7 +16,7 @@ public interface OnlineService {
     /**
      * @param dto 在线信息入参
      * @description: 在线信息分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-31 13:15:45
      * @return: PageResultVO<OnlineSearchResultVO>
      * @version: 1.0
@@ -26,7 +26,7 @@ public interface OnlineService {
     /**
      * @param onlineIds 在线信息id
      * @description: 强制退出
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-31 13:15:46
      * @return: void
      * @version: 1.0

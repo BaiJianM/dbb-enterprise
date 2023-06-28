@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * @description: IP地址工具
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-28 16:38:37
  */
 @Slf4j
@@ -16,7 +16,7 @@ public class IpUtils {
     /**
      * @param request 请求
      * @description: 获取IP地址
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-02-14 17:13:40
      * @return: String
      * @version: 1.0

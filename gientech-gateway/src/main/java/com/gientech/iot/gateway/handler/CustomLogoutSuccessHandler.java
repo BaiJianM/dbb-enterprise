@@ -26,7 +26,7 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * @description: 用户登出成功后的处理类
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 21:46:41
  */
 @Slf4j

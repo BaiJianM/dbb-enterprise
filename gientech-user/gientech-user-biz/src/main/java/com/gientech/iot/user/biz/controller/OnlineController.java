@@ -35,7 +35,7 @@ public class OnlineController {
     /**
      * @param dto 获取在线用户分页入参
      * @description: 获在线取用户分页
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-05-24 10:01:22
      * @return: GientechResponse<PageResultVO < UserInfoVO>>
      * @version: 1.0

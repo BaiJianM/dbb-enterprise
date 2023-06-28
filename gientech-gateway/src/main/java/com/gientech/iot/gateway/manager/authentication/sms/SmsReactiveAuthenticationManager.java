@@ -19,7 +19,7 @@ import static com.gientech.iot.gateway.constant.GatewayConstants.AuthErrorConsta
 
 /**
  * @description: 短信登录会通过该处理类校验账号密码及账号信息
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-17 21:46:28
  */
 @Slf4j

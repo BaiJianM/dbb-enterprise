@@ -4,7 +4,7 @@ import java.lang.annotation.*;
 
 /**
  * @description: 校验重复请求注解
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-10-29 21:09:33
  */
 @Documented
@@ -14,7 +14,7 @@ public @interface RepeatRequest {
 
     /**
      * @description: 幂等参数缓存时间（秒）
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-26 10:49:11
      * @return: long
      * @version: 1.0
@@ -23,7 +23,7 @@ public @interface RepeatRequest {
 
     /**
      * @description: 消息提示
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2023-04-26 10:49:13
      * @return: String
      * @version: 1.0

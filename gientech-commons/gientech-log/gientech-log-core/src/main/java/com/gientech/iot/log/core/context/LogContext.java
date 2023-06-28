@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @description: 日志记录上下文
- * @author: 王强
+ * @author: 白剑民
  * @dateTime: 2022-09-02 17:49:32
  */
 public class LogContext {
@@ -38,7 +38,7 @@ public class LogContext {
 
     /**
      * @description: 获取上下文
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-03 22:42:12
      * @return: @return {@code StandardEvaluationContext }
      * @version: 1.0
@@ -51,7 +51,7 @@ public class LogContext {
      * @param key   关键
      * @param value 价值
      * @description: 设置上下文变量信息
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-03 22:42:17
      * @return:
      * @version: 1.0
@@ -64,7 +64,7 @@ public class LogContext {
 
     /**
      * @description: 清除上下文信息
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-03 22:42:34
      * @return:
      * @version: 1.0
@@ -75,7 +75,7 @@ public class LogContext {
 
     /**
      * @description: 获取发生变化的数据信息集合
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-03 22:43:53
      * @return: @return {@code List<DiffDTO> }
      * @version: 1.0
@@ -87,7 +87,7 @@ public class LogContext {
     /**
      * @param diffVO 发生变化的数据
      * @description: 添加发生变化的数据
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-03 22:44:25
      * @return:
      * @version: 1.0
@@ -102,7 +102,7 @@ public class LogContext {
 
     /**
      * @description: 清除发生变化的数据集合
-     * @author: 王强
+     * @author: 白剑民
      * @date: 2022-09-03 22:44:46
      * @return:
      * @version: 1.0
