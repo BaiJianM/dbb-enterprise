@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!--项目标识需自定义-->
-    <artifactId>dbb</artifactId>
+    <artifactId>dbb-enterprise</artifactId>
     <groupId>top.dabaibai</groupId>
     <version>1.0.0</version>
     <name>dbb-framework</name>
