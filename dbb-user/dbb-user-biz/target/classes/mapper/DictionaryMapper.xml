@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gientech.iot.user.biz.mapper.DictionaryMapper">
+<mapper namespace="top.dabaibai.user.biz.mapper.DictionaryMapper">
 
     <!--数据字典查询基础字段-->
     <sql id="dictionaryInfo">
@@ -20,7 +20,7 @@
         ${alias}update_time
     </sql>
 
-    <select id="getDictListByParentId" resultType="com.gientech.iot.user.api.pojo.vo.DictTreeVO">
+    <select id="getDictListByParentId" resultType="top.dabaibai.user.api.pojo.vo.DictTreeVO">
         SELECT
         <include refid="dictionaryInfo">
             <property name="alias" value="t1."/>
@@ -46,7 +46,7 @@
         </if>
     </select>
 
-    <select id="getDictEntityListByParentId" resultType="com.gientech.iot.user.biz.entity.SysDictionary">
+    <select id="getDictEntityListByParentId" resultType="top.dabaibai.user.biz.entity.SysDictionary">
         SELECT
             t1.*
         FROM
@@ -66,7 +66,7 @@
         </if>
     </select>
 
-    <select id="getDictList" resultType="com.gientech.iot.user.api.pojo.vo.DictTreeVO">
+    <select id="getDictList" resultType="top.dabaibai.user.api.pojo.vo.DictTreeVO">
         SELECT
         <include refid="dictionaryInfo">
             <property name="alias" value="d."/>
@@ -95,7 +95,7 @@
         </if>
         order by d.create_time
     </select>
-    <select id="getDictByType" resultType="com.gientech.iot.user.api.pojo.vo.DictTreeVO">
+    <select id="getDictByType" resultType="top.dabaibai.user.api.pojo.vo.DictTreeVO">
         SELECT
         <include refid="dictionaryInfo">
             <property name="alias" value="d."/>
@@ -106,7 +106,7 @@
         d.is_delete = 0 and d.dict_type = #{dictType}
         ORDER BY d.create_time
     </select>
-    <select id="listType" resultType="com.gientech.iot.user.api.pojo.vo.DictInfoVO">
+    <select id="listType" resultType="top.dabaibai.user.api.pojo.vo.DictInfoVO">
         SELECT
         <include refid="dictionaryInfo">
             <property name="alias" value="d."/>
@@ -118,7 +118,7 @@
         d.is_delete = 0 and `level` = 1
         ORDER BY d.create_time
     </select>
-    <select id="listAll" resultType="com.gientech.iot.user.api.pojo.vo.DictInfoVO">
+    <select id="listAll" resultType="top.dabaibai.user.api.pojo.vo.DictInfoVO">
         SELECT
         <include refid="dictionaryInfo">
             <property name="alias" value="d."/>
@@ -134,7 +134,7 @@
         FROM sys_dictionary
         WHERE parent_id = #{dictParentId}
     </select>
-    <select id="getPathById" resultType="com.gientech.iot.user.biz.entity.SysDictionary">
+    <select id="getPathById" resultType="top.dabaibai.user.biz.entity.SysDictionary">
         SELECT t1.*
         FROM
         sys_dictionary t1
@@ -148,7 +148,7 @@
         ) t2 ON t1.id = t2._id
         ORDER BY t1.create_time
     </select>
-    <select id="getTopDictList" resultType="com.gientech.iot.user.api.pojo.vo.DictTreeVO">
+    <select id="getTopDictList" resultType="top.dabaibai.user.api.pojo.vo.DictTreeVO">
         SELECT
         <include refid="dictionaryInfo">
             <property name="alias" value="d."/>

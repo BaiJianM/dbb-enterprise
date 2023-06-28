@@ -1,4 +1,4 @@
-## Gientech-Xxljob 模块
+## Dbb-Xxljob 模块
 
 #### 模块简介
 
@@ -8,4 +8,4 @@
 
 #### 包路径说明
 
-- com.gientech.iot.xxljob：模块自动配置
+- top.dabaibai.xxljob：模块自动配置

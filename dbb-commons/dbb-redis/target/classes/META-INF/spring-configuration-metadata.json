@@ -2,45 +2,45 @@
   "groups": [
     {
       "name": "gientech.redis",
-      "type": "com.gientech.iot.redis.properties.RedisCustomProperties",
-      "sourceType": "com.gientech.iot.redis.properties.RedisCustomProperties"
+      "type": "top.dabaibai.redis.properties.RedisCustomProperties",
+      "sourceType": "top.dabaibai.redis.properties.RedisCustomProperties"
     },
     {
       "name": "gientech.redis.spring-cache-properties",
-      "type": "com.gientech.iot.redis.properties.CustomSpringCacheProperties",
-      "sourceType": "com.gientech.iot.redis.properties.CustomSpringCacheProperties"
+      "type": "top.dabaibai.redis.properties.CustomSpringCacheProperties",
+      "sourceType": "top.dabaibai.redis.properties.CustomSpringCacheProperties"
     }
   ],
   "properties": [
     {
       "name": "gientech.redis.spring-cache-properties",
-      "type": "com.gientech.iot.redis.properties.CustomSpringCacheProperties",
+      "type": "top.dabaibai.redis.properties.CustomSpringCacheProperties",
       "description": "Spring Cache自定义配置",
-      "sourceType": "com.gientech.iot.redis.properties.RedisCustomProperties"
+      "sourceType": "top.dabaibai.redis.properties.RedisCustomProperties"
     },
     {
       "name": "gientech.redis.spring-cache-properties.caching-null-value",
       "type": "java.lang.Boolean",
       "description": "是否缓存空值，默认设置为false，防止缓存击穿",
-      "sourceType": "com.gientech.iot.redis.properties.CustomSpringCacheProperties"
+      "sourceType": "top.dabaibai.redis.properties.CustomSpringCacheProperties"
     },
     {
       "name": "gientech.redis.spring-cache-properties.key-ttl",
       "type": "java.lang.Integer",
       "description": "key的超时时间（单位：毫秒），默认-1永不过期",
-      "sourceType": "com.gientech.iot.redis.properties.CustomSpringCacheProperties"
+      "sourceType": "top.dabaibai.redis.properties.CustomSpringCacheProperties"
     },
     {
       "name": "gientech.redis.spring-cache-properties.use-key-prefix",
       "type": "java.lang.Boolean",
       "description": "是否使用spring cache配置的（或注解中使用value\/cacheNames）作为统一前缀，默认开启，为业务区分",
-      "sourceType": "com.gientech.iot.redis.properties.CustomSpringCacheProperties"
+      "sourceType": "top.dabaibai.redis.properties.CustomSpringCacheProperties"
     },
     {
       "name": "gientech.redis.use-spring-cache",
       "type": "java.lang.Boolean",
       "description": "是否使用Redis作为Spring Cache的缓存管理器实现",
-      "sourceType": "com.gientech.iot.redis.properties.RedisCustomProperties"
+      "sourceType": "top.dabaibai.redis.properties.RedisCustomProperties"
     }
   ],
   "hints": []

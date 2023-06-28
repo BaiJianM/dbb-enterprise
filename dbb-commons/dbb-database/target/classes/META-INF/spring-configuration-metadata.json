@@ -2,8 +2,8 @@
   "groups": [
     {
       "name": "spring.datasource.dynamic",
-      "type": "com.gientech.iot.database.properties.DynamicDataSourceConfiguration",
-      "sourceType": "com.gientech.iot.database.properties.DynamicDataSourceConfiguration"
+      "type": "top.dabaibai.database.properties.DynamicDataSourceConfiguration",
+      "sourceType": "top.dabaibai.database.properties.DynamicDataSourceConfiguration"
     }
   ],
   "properties": [
@@ -11,13 +11,13 @@
       "name": "spring.datasource.dynamic.datasource",
       "type": "java.util.Map<java.lang.String,com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DataSourceProperty>",
       "description": "动态数据源",
-      "sourceType": "com.gientech.iot.database.properties.DynamicDataSourceConfiguration"
+      "sourceType": "top.dabaibai.database.properties.DynamicDataSourceConfiguration"
     },
     {
       "name": "spring.datasource.dynamic.read-write",
       "type": "java.lang.Boolean",
       "description": "读写分离配置(是否开启)",
-      "sourceType": "com.gientech.iot.database.properties.DynamicDataSourceConfiguration"
+      "sourceType": "top.dabaibai.database.properties.DynamicDataSourceConfiguration"
     }
   ],
   "hints": []

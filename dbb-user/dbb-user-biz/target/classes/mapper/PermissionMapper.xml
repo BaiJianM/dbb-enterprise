@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gientech.iot.user.biz.mapper.PermissionMapper">
+<mapper namespace="top.dabaibai.user.biz.mapper.PermissionMapper">
 
-    <select id="list" resultType="com.gientech.iot.user.biz.entity.SysPermission"
-            parameterType="com.gientech.iot.user.api.pojo.dto.PermissionSearchDTO">
+    <select id="list" resultType="top.dabaibai.user.biz.entity.SysPermission"
+            parameterType="top.dabaibai.user.api.pojo.dto.PermissionSearchDTO">
         select p.*
         from sys_permission p
         where p.is_delete = 0 and p.system_id = #{dto.systemId}
@@ -18,7 +18,7 @@
         </if>
     </select>
 
-    <select id="getPermListByParentIds" resultType="com.gientech.iot.user.biz.entity.SysPermission" parameterType="java.util.List">
+    <select id="getPermListByParentIds" resultType="top.dabaibai.user.biz.entity.SysPermission" parameterType="java.util.List">
         select * from sys_permission
         where is_delete = 0
         <foreach collection="parentIds" item="item"  index="index" open=" AND (" close=")" separator=" OR ">
@@ -32,13 +32,13 @@
         </if>
     </select>
 
-    <select id="getPermissionListBySystemId" resultType="com.gientech.iot.user.api.pojo.vo.PermissionTreeVO">
+    <select id="getPermissionListBySystemId" resultType="top.dabaibai.user.api.pojo.vo.PermissionTreeVO">
         SELECT p.*
         FROM sys_permission p
         WHERE p.system_id = #{systemId} AND p.is_delete = 0 AND p.is_enable = 1
     </select>
 
-    <select id="getPermissionListByRoleIds" resultType="com.gientech.iot.user.biz.entity.SysPermission">
+    <select id="getPermissionListByRoleIds" resultType="top.dabaibai.user.biz.entity.SysPermission">
         SELECT
         p.*
         FROM sys_permission p

@@ -1,4 +1,4 @@
-## Gientech-Feign 模块
+## Dbb-Feign 模块
 
 #### 模块简介
 
@@ -8,14 +8,14 @@
 
 #### 包路径说明
 
-- com.gientech.iot.feign：feign客户端拦截器及自动配置
+- top.dabaibai.feign：feign客户端拦截器及自动配置
 
 #### 模块功能示例
 
 ```xml
 <dependency>
-    <groupId>com.gientech.iot</groupId>
-    <artifactId>gientech-feign</artifactId>
+    <groupId>top.dabaibai</groupId>
+    <artifactId>dbb-feign</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
@@ -45,7 +45,7 @@ public class FeignRequestInterceptor implements RequestInterceptor {
 2、响应拦截
 
 ```java
-// 通过com.gientech.iot.feign.interceptor包下的FeignResponseInterceptor接口中的handle方法实现
+// 通过top.dabaibai.feign.interceptor包下的FeignResponseInterceptor接口中的handle方法实现
 // 结合部门所有项目来看用不到多个响应拦截，单个项目仅允许存在一个响应拦截实例，且是一个有效的Bean
 @Component
 public class CustomFeignResponseInterceptor implements FeignResponseInterceptor {

@@ -22,7 +22,7 @@ mkdir -p /opt/docker/nacos/conf
 ```
 
 ```
-将项目`gientech-nacos`模块`file`目录中的`/nacos/conf`底下的所有文件拷贝至`/opt/docker/nacos/conf`
+将项目`dbb-nacos`模块`file`目录中的`/nacos/conf`底下的所有文件拷贝至`/opt/docker/nacos/conf`
 - `nacos-logback.xml`可调整日志配置
 - `application.properties`为`nacos`基础配置，可进行端口、外置数据库、日志生成开关等常用配置
 - `schema.sql`为使用外置数据库配置时，用于建库的脚本
@@ -36,7 +36,7 @@ mkdir -p /opt/docker/nacos/conf
 version: '3'
 
 networks:
-  gientech:
+  dbb:
 
 services:
   # Nacos服务
@@ -57,7 +57,7 @@ services:
     ports:
       - 8848:8848
     networks:
-      - gientech
+      - dbb
 ```
 
 

@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.gientech.iot.redis.RedisAutoConfiguration
+  top.dabaibai.redis.RedisAutoConfiguration

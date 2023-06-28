@@ -2,8 +2,8 @@
   "groups": [
     {
       "name": "security",
-      "type": "com.gientech.iot.gateway.conf.PermitAllUrlProperties",
-      "sourceType": "com.gientech.iot.gateway.conf.PermitAllUrlProperties"
+      "type": "top.dabaibai.gateway.conf.PermitAllUrlProperties",
+      "sourceType": "top.dabaibai.gateway.conf.PermitAllUrlProperties"
     }
   ],
   "properties": [
@@ -11,7 +11,7 @@
       "name": "security.ignore-urls",
       "type": "java.lang.String[]",
       "description": "指定忽略接口url",
-      "sourceType": "com.gientech.iot.gateway.conf.PermitAllUrlProperties"
+      "sourceType": "top.dabaibai.gateway.conf.PermitAllUrlProperties"
     }
   ],
   "hints": []

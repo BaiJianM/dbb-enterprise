@@ -21,7 +21,7 @@ mkdir -p /opt/docker/rocketmq/namesrv/logs
 ```
 
 ```
-将项目`gientech-stream`模块`/file/rocketmq/`目录中的`broker.conf`拷贝到`/opt/docker/rocketmq/broker1/conf`下
+将项目`dbb-stream`模块`/file/rocketmq/`目录中的`broker.conf`拷贝到`/opt/docker/rocketmq/broker1/conf`下
 ```
 
 #### 3、编写docker-compose.yml
@@ -30,7 +30,7 @@ mkdir -p /opt/docker/rocketmq/namesrv/logs
 version: '3'
 
 networks:
-  gientech:
+  dbb:
 
 services:
   # ----- RocketMQ服务(起)

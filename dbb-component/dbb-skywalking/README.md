@@ -38,7 +38,7 @@ mkdir -p /opt/docker/skywalking/package
 ```
 
 ```
-将项目`gientech-skywalking`模块`file`目录中的skywalking-agent.jar文件拷贝至`/opt/docker/skywalking/package`
+将项目`dbb-skywalking`模块`file`目录中的skywalking-agent.jar文件拷贝至`/opt/docker/skywalking/package`
 - `Dockerfile`docker启动脚本
 - `skywalking-agent.jar`拦截代理
 ```

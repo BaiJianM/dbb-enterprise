@@ -1,4 +1,4 @@
-## Gientech-Database 模块
+## Dbb-Database 模块
 
 ### 模块简介
 
@@ -8,21 +8,21 @@
 
 #### 包路径说明
 
-- com.gientech.iot.database.annotation：模块注解，当前仅实现数据权限、mysql悲观锁
-- com.gientech.iot.database.datapermission：数据权限简单实现
-- com.gientech.iot.database.entity：基础实体类，需业务表继承以实现自动填充
-- com.gientech.iot.database.enums：模块内置枚举
-- com.gientech.iot.database.handler：全局处理器，目前实现基础实体类数据自动填充处理器
-- com.gientech.iot.database.interceptor：全局拦截器，目前实现读写分离、悲观锁拦截器
-- com.gientech.iot.database.properties：模块自定义配置，目前可配置多数据源相关
-- com.gientech.iot.database：包的父路径，模块自动配置类
+- top.dabaibai.database.annotation：模块注解，当前仅实现数据权限、mysql悲观锁
+- top.dabaibai.database.datapermission：数据权限简单实现
+- top.dabaibai.database.entity：基础实体类，需业务表继承以实现自动填充
+- top.dabaibai.database.enums：模块内置枚举
+- top.dabaibai.database.handler：全局处理器，目前实现基础实体类数据自动填充处理器
+- top.dabaibai.database.interceptor：全局拦截器，目前实现读写分离、悲观锁拦截器
+- top.dabaibai.database.properties：模块自定义配置，目前可配置多数据源相关
+- top.dabaibai.database：包的父路径，模块自动配置类
 
 #### 模块功能示例
 
 ```xml
 <dependency>
-    <groupId>com.gientech.iot</groupId>
-    <artifactId>gientech-database</artifactId>
+    <groupId>top.dabaibai</groupId>
+    <artifactId>dbb-database</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```

@@ -19,7 +19,7 @@ mkdir -p /opt/docker/seata-server/conf
 ```
 
 ```
-将项目`gientech-seata`模块`file`目录中的`/seata`底下的所有文件拷贝至`/opt/docker/seata-server/conf`
+将项目`dbb-seata`模块`file`目录中的`/seata`底下的所有文件拷贝至`/opt/docker/seata-server/conf`
 - `registry.conf`为配置文件，本框架中搭配`nacos`使用，其中需配置`nacos`信息
 - `seata.sql`为建库脚本
 ```
@@ -30,7 +30,7 @@ mkdir -p /opt/docker/seata-server/conf
 version: '3'
 
 networks:
-  gientech:
+  dbb:
 
 services:
   # 分布式事务中心服务
@@ -56,7 +56,7 @@ services:
 
 ```
 1、创建seata单独使用的命名空间
-2、将项目`gientech-seata`模块`file`目录中的`/seata`底下的`seata_nacos_config.zip`导入seata命名空间的配置列表中
+2、将项目`dbb-seata`模块`file`目录中的`/seata`底下的`seata_nacos_config.zip`导入seata命名空间的配置列表中
 ```
 
 ```yml

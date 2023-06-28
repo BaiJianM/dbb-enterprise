@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.gientech.iot.log.core.GientechLogAutoConfiguration
+  top.dabaibai.log.core.DbbLogAutoConfiguration

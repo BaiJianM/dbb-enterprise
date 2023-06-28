@@ -1,4 +1,4 @@
-## Gientech-WebSocket 模块
+## Dbb-WebSocket 模块
 
 #### 模块简介
 
@@ -8,21 +8,21 @@
 
 #### 包路径说明
 
-- com.gientech.iot.websocket.annotations：服务端点注解
-- com.gientech.iot.websocket.handler：请求处理器
-- com.gientech.iot.websocket.interceptor：握手拦截器
-- com.gientech.iot.websocket.listener：分布式session实现，通过集成Redis订阅频道实现节点本地缓存发现
-- com.gientech.iot.websocket.operation：服务端主动消息发送实现
-- com.gientech.iot.websocket.server：服务端配置
-- com.gientech.iot.websocket.vo：消息对象
-- com.gientech.iot.websocket：模块自动配置
+- top.dabaibai.websocket.annotations：服务端点注解
+- top.dabaibai.websocket.handler：请求处理器
+- top.dabaibai.websocket.interceptor：握手拦截器
+- top.dabaibai.websocket.listener：分布式session实现，通过集成Redis订阅频道实现节点本地缓存发现
+- top.dabaibai.websocket.operation：服务端主动消息发送实现
+- top.dabaibai.websocket.server：服务端配置
+- top.dabaibai.websocket.vo：消息对象
+- top.dabaibai.websocket：模块自动配置
 
 #### 模块功能示例
 
 ```xml
 <dependency>
-    <groupId>com.gientech.iot</groupId>
-    <artifactId>gientech-websocket</artifactId>
+    <groupId>top.dabaibai</groupId>
+    <artifactId>dbb-websocket</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
@@ -46,13 +46,13 @@ public class NormalWebSocketEndpoint {
 2、使用简单增强注解
 
 ```java
-// 实现GientechWebSocketHandler接口，并标注@GientechWebSocketEndpoint注解
+// 实现DbbWebSocketHandler接口，并标注@DbbWebSocketEndpoint注解
 // 该注解可接收两个参数：监听路径和WebSocket握手时的拦截器列表，前者为必传，后者为选传
 // 拦截器列表可通过继承AbstractCustomHandshakeInterceptor并重写beforeHandshakeEx方法实现，该方法返回一个布尔值来表示握手成功还是失败
 // 同时继承AbstractCustomHandshakeInterceptor的类必须是一个有效的Spring Bean
-@GientechWebSocketEndpoint(value = "/test",
+@DbbWebSocketEndpoint(value = "/test",
         handshakeInterceptors = {DemoWebSocketInterceptor1.class, DemoWebSocketInterceptor2.class})
-public class DemoWebSocketHandler implements GientechWebSocketHandler {
+public class DemoWebSocketHandler implements DbbWebSocketHandler {
     @Override
     public void onOpen(String socketType, String socketId, WebSocketSession session) {
         log.info("连接时的逻辑");

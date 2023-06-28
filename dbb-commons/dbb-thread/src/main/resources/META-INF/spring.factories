@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.gientech.iot.thread.CustomThreadPoolAutoConfiguration
+top.dabaibai.thread.CustomThreadPoolAutoConfiguration

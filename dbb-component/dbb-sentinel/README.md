@@ -24,7 +24,7 @@ mkdir -p /opt/docker/sentinel-dashboard
 ```
 
 ```
-将项目`gientech-sentinel`模块`file`目录中的`/sentinel-dashboard`底下的所有文件拷贝至`/opt/docker/sentinel-dashboard`
+将项目`dbb-sentinel`模块`file`目录中的`/sentinel-dashboard`底下的所有文件拷贝至`/opt/docker/sentinel-dashboard`
 - `Dockerfile`docker启动脚本
 - `sentinel-dashboard-1.8.3.jar`可视化项目包
 ```
@@ -35,7 +35,7 @@ mkdir -p /opt/docker/sentinel-dashboard
 version: '3'
 
 networks:
-  gientech:
+  dbb:
 
 services:
   # sentinel-dashboard服务
@@ -48,7 +48,7 @@ services:
     ports:
       - "8858:8858"
     networks:
-      - gientech
+      - dbb
 ```
 
 #### 4、服务启动及其他操作（基于docker-compose）

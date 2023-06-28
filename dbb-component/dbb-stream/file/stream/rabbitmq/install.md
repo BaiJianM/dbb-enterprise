@@ -23,7 +23,7 @@ mkdir -p /opt/docker/rabbitmq/data
 version: '3'
 
 networks:
-  gientech:
+  dbb:
 
 services:
   # RabbitMQ服务
@@ -46,7 +46,7 @@ services:
       # 密码
       - RABBITMQ_DEFAULT_PASS=123456
     networks:
-      - gientech
+      - dbb
 ```
 
 #### 4、服务启动及其他操作（基于docker-compose）

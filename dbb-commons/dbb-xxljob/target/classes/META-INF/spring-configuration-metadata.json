@@ -2,8 +2,8 @@
   "groups": [
     {
       "name": "xxl.job",
-      "type": "com.gientech.iot.xxljob.XxlJobProperties",
-      "sourceType": "com.gientech.iot.xxljob.XxlJobProperties"
+      "type": "top.dabaibai.xxljob.XxlJobProperties",
+      "sourceType": "top.dabaibai.xxljob.XxlJobProperties"
     }
   ],
   "properties": [
@@ -11,19 +11,19 @@
       "name": "xxl.job.access-token",
       "type": "java.lang.String",
       "description": "与客户端服务鉴权码一致",
-      "sourceType": "com.gientech.iot.xxljob.XxlJobProperties"
+      "sourceType": "top.dabaibai.xxljob.XxlJobProperties"
     },
     {
       "name": "xxl.job.admin",
-      "type": "com.gientech.iot.xxljob.XxlJobAdmin",
+      "type": "top.dabaibai.xxljob.XxlJobAdmin",
       "description": "客户端配置",
-      "sourceType": "com.gientech.iot.xxljob.XxlJobProperties"
+      "sourceType": "top.dabaibai.xxljob.XxlJobProperties"
     },
     {
       "name": "xxl.job.executor",
-      "type": "com.gientech.iot.xxljob.XxlJobExecutor",
+      "type": "top.dabaibai.xxljob.XxlJobExecutor",
       "description": "执行器配置",
-      "sourceType": "com.gientech.iot.xxljob.XxlJobProperties"
+      "sourceType": "top.dabaibai.xxljob.XxlJobProperties"
     }
   ],
   "hints": []

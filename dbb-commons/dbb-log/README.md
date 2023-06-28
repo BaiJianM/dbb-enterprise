@@ -1,4 +1,4 @@
-## Gientech-Log 模块使用手册
+## Dbb-Log 模块使用手册
 
 #### 模块简介
 
@@ -10,39 +10,39 @@
 
 #### 包路径说明
 
-- com.gientech.iot.log.annotations：日志相关注解
-- com.gientech.iot.log.core：系统日志及自定义操作日志实现、模块自动配置类
-  - com.gientech.iot.log.core.aop：操作日志切面拦截器
-  - com.gientech.iot.log.core.context：操作日志上下文
-  - com.gientech.iot.log.core.enums：日志类型枚举
-  - com.gientech.iot.log.core.function：操作日志处理函数
-  - com.gientech.iot.log.core.pojo：操作日志相关对象
-  - com.gientech.iot.log.core.properties：日志自定义配置
-  - com.gientech.iot.log.core.service：操作日志存储扩展接口及默认实现
+- top.dabaibai.log.annotations：日志相关注解
+- top.dabaibai.log.core：系统日志及自定义操作日志实现、模块自动配置类
+  - top.dabaibai.log.core.aop：操作日志切面拦截器
+  - top.dabaibai.log.core.context：操作日志上下文
+  - top.dabaibai.log.core.enums：日志类型枚举
+  - top.dabaibai.log.core.function：操作日志处理函数
+  - top.dabaibai.log.core.pojo：操作日志相关对象
+  - top.dabaibai.log.core.properties：日志自定义配置
+  - top.dabaibai.log.core.service：操作日志存储扩展接口及默认实现
 
 #### 模块集成
 
-1、本模块提供最小化引入，如仅希望使用注解（例如在各应用模块的api子模块中），则只需引入gientech-log-annotations即可
+1、本模块提供最小化引入，如仅希望使用注解（例如在各应用模块的api子模块中），则只需引入dbb-log-annotations即可
 
 ```xml
 <dependency>
-    <groupId>com.gientech.iot</groupId>
-    <artifactId>gientech-log-annotations</artifactId>
+    <groupId>top.dabaibai</groupId>
+    <artifactId>dbb-log-annotations</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
 
-2、若希望使用本模块所有功能，则需引入gientech-log-core
+2、若希望使用本模块所有功能，则需引入dbb-log-core
 
 ```xml
 <dependency>
-    <groupId>com.gientech.iot</groupId>
-    <artifactId>gientech-log-core</artifactId>
+    <groupId>top.dabaibai</groupId>
+    <artifactId>dbb-log-core</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
 
-3、注：此外，需注意，模块本身的操作日志存储默认实现为本地存储，若使用默认实现，则将会在项目跟路径下生成操作日志文件，名为"OperationLog.json"。如希望使用mysql等三方存储，请实现`com.gientech.iot.log.core.service.ILogService`接口
+3、注：此外，需注意，模块本身的操作日志存储默认实现为本地存储，若使用默认实现，则将会在项目跟路径下生成操作日志文件，名为"OperationLog.json"。如希望使用mysql等三方存储，请实现`ILogService`接口
 
 
 #### 模块功能示例
@@ -50,8 +50,8 @@
 1、操作日志（普通使用方法）
 
 ```java
-// 若业务模块引入了框架自带的gientech-user-api子模块，则无需实现ILogService接口
-// gientech-user-api子模块中的IOperationLogService接口将使业务模块的日志记录到user模块数据库中
+// 若业务模块引入了框架自带的dbb-user-api子模块，则无需实现ILogService接口
+// dbb-user-api子模块中的IOperationLogService接口将使业务模块的日志记录到user模块数据库中
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor(onConstructor_ = {@Autowired})

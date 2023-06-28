@@ -17,7 +17,7 @@ mkdir -p /opt/docker/kafka-eagle
 ```
 
 ```
-将项目`gientech-stream`模块`/file/kafka/`目录中的`system-config.properties`拷贝到`/opt/docker/kafka-eagle`下
+将项目`dbb-stream`模块`/file/kafka/`目录中的`system-config.properties`拷贝到`/opt/docker/kafka-eagle`下
 ```
 
 #### 3、编写docker-compose.yml
@@ -26,7 +26,7 @@ mkdir -p /opt/docker/kafka-eagle
 version: '3'
 
 networks:
-  gientech:
+  dbb:
 
 services:
   # ----- Kafka服务(起)

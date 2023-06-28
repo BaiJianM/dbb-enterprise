@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gientech.iot.user.biz.mapper.DepartmentMapper">
+<mapper namespace="top.dabaibai.user.biz.mapper.DepartmentMapper">
 
-    <select id="list" resultType="com.gientech.iot.user.biz.entity.SysDepartment"
-            parameterType="com.gientech.iot.user.api.pojo.dto.DepartmentSearchDTO">
+    <select id="list" resultType="top.dabaibai.user.biz.entity.SysDepartment"
+            parameterType="top.dabaibai.user.api.pojo.dto.DepartmentSearchDTO">
         select d.*
         from sys_department d
         where d.is_delete = 0
@@ -18,14 +18,14 @@
         </if>
     </select>
 
-    <select id="getDeptListByEnterpriseId" resultType="com.gientech.iot.user.biz.entity.SysDepartment">
+    <select id="getDeptListByEnterpriseId" resultType="top.dabaibai.user.biz.entity.SysDepartment">
         select *
         from sys_department
         where is_delete = 0
         and enterprise_id = #{enterpriseId}
     </select>
 
-    <select id="getDeptListByParentIds" resultType="com.gientech.iot.user.biz.entity.SysDepartment">
+    <select id="getDeptListByParentIds" resultType="top.dabaibai.user.biz.entity.SysDepartment">
         select *
         from sys_department
         where is_delete = 0

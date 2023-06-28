@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gientech.iot.user.biz.mapper.DepartmentUserMapper">
+<mapper namespace="top.dabaibai.user.biz.mapper.DepartmentUserMapper">
 
     <select id="getUserIdsByDeptIds" resultType="java.lang.Long">
         SELECT du.user_id
@@ -24,7 +24,7 @@
         </foreach>
     </select>
 
-    <select id="getListByDeptIds" resultType="com.gientech.iot.user.biz.entity.SysDepartmentUser">
+    <select id="getListByDeptIds" resultType="top.dabaibai.user.biz.entity.SysDepartmentUser">
         SELECT du.*
         FROM sys_department_user du
         LEFT JOIN sys_user u ON u.id = du.user_id
@@ -35,7 +35,7 @@
         </foreach>
     </select>
 
-    <select id="getListByUserIds" resultType="com.gientech.iot.user.biz.entity.SysDepartmentUser">
+    <select id="getListByUserIds" resultType="top.dabaibai.user.biz.entity.SysDepartmentUser">
         SELECT du.*
         FROM sys_department_user du
         LEFT JOIN sys_department d ON d.id = du.department_id

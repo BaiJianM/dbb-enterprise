@@ -3,7 +3,7 @@ spring:
     # spring cloud stream(scs)消息队列配置(rocketmq)
     # spring-cloud-stream的消息通道前缀、消息监听函数的bean名称，多个配置以分号;隔开
     function:
-      definition: gientech
+      definition: dbb
     stream:
       default-binder: rocketmq
       # stream与rocketmq的集成配置
@@ -15,7 +15,7 @@ spring:
         # rocketmq的特性配置
         bindings:
           # 消息输入通道(接收)
-          gientech-in-0:
+          dbb-in-0:
             # 消费者配置
             consumer:
               # 订阅的tag，多个以||隔开
@@ -36,7 +36,7 @@ spring:
                 # 消息拉取间隔
                 pull-interval: 0
           # 消息输出通道(发送)
-          gientech-out-0:
+          dbb-out-0:
             # 生产者配置
             producer:
               # 生产者组
@@ -52,7 +52,7 @@ spring:
       # 通用集成配置
       bindings:
         # 通用消息输入通道(需与binder中的输入通道名保持一致)
-        gientech-in-0:
+        dbb-in-0:
           # rabbitmq中的exchange，kafka、rocketmq中的topic
           destination: test-topic
           # 消息类型
@@ -60,6 +60,6 @@ spring:
           # 消费者组
           group: demo-group
         # 通用消息输出通道(需与binder中的输出通道名保持一致)
-        gientech-out-0:
+        dbb-out-0:
           destination: test-topic
           content-type: application/json

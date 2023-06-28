@@ -4,7 +4,7 @@ spring:
     # 函数式消息
     function:
       ## spring中consumer/producer的bean名称
-      definition: gientech
+      definition: dbb
 
     #SpringCloud Stream 配置
     stream:
@@ -22,7 +22,7 @@ spring:
       ## rabbitmq特性配置
       rabbit:
         bindings:
-          gientech-in-0:
+          dbb-in-0:
             consumer:
               ## 开启批处理
               enable-batching: false
@@ -44,7 +44,7 @@ spring:
         ## 函数式consumer的命名规范
         ## "-in-" 前面是spring中consumer的bean名称，后面是通道号
         ## "-out-" 前面是spring中producer的bean名称，后面是通道号
-        gientech-in-0:
+        dbb-in-0:
           binder: rabbit
           ## 消费者组
           group: someGroup

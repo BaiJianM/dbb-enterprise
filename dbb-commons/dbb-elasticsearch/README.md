@@ -1,4 +1,4 @@
-## Gientech-Elasticsearch 模块
+## Dbb-Elasticsearch 模块
 
 ### 模块简介
 
@@ -10,8 +10,8 @@
 
 ```xml
 <dependency>
-    <groupId>com.gientech.iot</groupId>
-    <artifactId>gientech-elasticsearch</artifactId>
+    <groupId>top.dabaibai</groupId>
+    <artifactId>dbb-elasticsearch</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```

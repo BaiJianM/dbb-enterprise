@@ -2,13 +2,13 @@
   "groups": [
     {
       "name": "gientech.log-record",
-      "type": "com.gientech.iot.log.core.properties.LogProperties",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties"
+      "type": "top.dabaibai.log.core.properties.LogProperties",
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties"
     },
     {
       "name": "gientech.log-record.thread-pool",
-      "type": "com.gientech.iot.log.core.properties.LogProperties$ThreadPoolProperties",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties",
+      "type": "top.dabaibai.log.core.properties.LogProperties$ThreadPoolProperties",
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties",
       "sourceMethod": "getThreadPool()"
     }
   ],
@@ -17,43 +17,43 @@
       "name": "gientech.log-record.add-msg-format",
       "type": "java.lang.String",
       "description": "新增对象属性时的描述",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties"
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties"
     },
     {
       "name": "gientech.log-record.diff-msg-format",
       "type": "java.lang.String",
       "description": "对象属性变更时的描述",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties"
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties"
     },
     {
       "name": "gientech.log-record.msg-format",
       "type": "java.lang.String",
       "description": "对象属性键值对映射描述，第一个属性为键，第二个属性为值",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties"
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties"
     },
     {
       "name": "gientech.log-record.msg-separator",
       "type": "java.lang.String",
       "description": "多个对象属性键值对转字符串的分隔符",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties"
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties"
     },
     {
       "name": "gientech.log-record.on-error",
       "type": "java.lang.Boolean",
       "description": "在方法中主动抛出异常时的操作日志生成策略（默认不继续生成任何操作日志，注：未知异常（非GientechException）的情况下，不进行日志生成）",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties"
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties"
     },
     {
       "name": "gientech.log-record.thread-pool.enabled",
       "type": "java.lang.Boolean",
       "description": "是否启用线程池",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties$ThreadPoolProperties"
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties$ThreadPoolProperties"
     },
     {
       "name": "gientech.log-record.thread-pool.pool-size",
       "type": "java.lang.Integer",
       "description": "线程池核心线程数",
-      "sourceType": "com.gientech.iot.log.core.properties.LogProperties$ThreadPoolProperties"
+      "sourceType": "top.dabaibai.log.core.properties.LogProperties$ThreadPoolProperties"
     }
   ],
   "hints": []

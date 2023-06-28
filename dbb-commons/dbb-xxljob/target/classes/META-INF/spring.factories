@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.gientech.iot.xxljob.XxlJobAutoConfiguration
+  top.dabaibai.xxljob.XxlJobAutoConfiguration

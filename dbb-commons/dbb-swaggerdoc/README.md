@@ -1,4 +1,4 @@
-## Gientech-Swagger 模块
+## Dbb-Swagger 模块
 
 #### 模块简介
 
@@ -8,5 +8,5 @@
 
 #### 包路径说明
 
-- com.gientech.iot.swaggerdoc.properties：自定义配置
-- com.gientech.iot.swaggerdoc：包父路径，模块自动配置类 
+- top.dabaibai.swaggerdoc.properties：自定义配置
+- top.dabaibai.swaggerdoc：包父路径，模块自动配置类 

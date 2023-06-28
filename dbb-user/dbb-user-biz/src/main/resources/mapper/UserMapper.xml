@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gientech.iot.user.biz.mapper.UserMapper">
+<mapper namespace="top.dabaibai.user.biz.mapper.UserMapper">
 
-    <select id="page" resultType="com.gientech.iot.user.api.pojo.vo.UserSearchResultVO">
+    <select id="page" resultType="top.dabaibai.user.api.pojo.vo.UserSearchResultVO">
         select
         u.*,
         u.id as user_id,
@@ -33,7 +33,7 @@
         order by u.create_time desc
     </select>
 
-    <select id="getUserListByEnterpriseId" resultType="com.gientech.iot.user.api.pojo.vo.UserDetailResultVO">
+    <select id="getUserListByEnterpriseId" resultType="top.dabaibai.user.api.pojo.vo.UserDetailResultVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -48,7 +48,7 @@
         WHERE e.id = #{enterpriseId} AND u.is_delete = 0 AND u.is_enable = 1
     </select>
 
-    <select id="getUserListByDepartmentId" resultType="com.gientech.iot.user.api.pojo.vo.UserDetailResultVO">
+    <select id="getUserListByDepartmentId" resultType="top.dabaibai.user.api.pojo.vo.UserDetailResultVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -60,7 +60,7 @@
         WHERE d.id = #{departmentId} AND u.is_delete = 0 AND u.is_enable = 1
     </select>
 
-    <select id="getSystemUserInfoById" resultType="com.gientech.iot.user.api.pojo.vo.SystemUserInfoVO">
+    <select id="getSystemUserInfoById" resultType="top.dabaibai.user.api.pojo.vo.SystemUserInfoVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -76,7 +76,7 @@
         WHERE u.id = #{userId} AND u.is_delete = 0 AND u.is_enable = 1
     </select>
 
-    <select id="getUserInfoById" resultType="com.gientech.iot.user.api.pojo.vo.UserDetailResultVO">
+    <select id="getUserInfoById" resultType="top.dabaibai.user.api.pojo.vo.UserDetailResultVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -92,7 +92,7 @@
         WHERE u.id = #{userId} AND u.is_delete = 0
     </select>
 
-    <select id="getUserInfoByIdCardNo" resultType="com.gientech.iot.user.api.pojo.vo.UserDetailResultVO">
+    <select id="getUserInfoByIdCardNo" resultType="top.dabaibai.user.api.pojo.vo.UserDetailResultVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -107,7 +107,7 @@
         WHERE u.id_card_no = #{idCardNo} AND u.is_delete = 0
     </select>
 
-    <select id="getUserInfoByCode" resultType="com.gientech.iot.user.api.pojo.vo.UserDetailResultVO">
+    <select id="getUserInfoByCode" resultType="top.dabaibai.user.api.pojo.vo.UserDetailResultVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -122,7 +122,7 @@
         WHERE u.code = #{code} AND u.is_delete = 0
     </select>
 
-    <select id="getUserInfoByIds" resultType="com.gientech.iot.user.api.pojo.vo.UserDetailResultVO">
+    <select id="getUserInfoByIds" resultType="top.dabaibai.user.api.pojo.vo.UserDetailResultVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -140,7 +140,7 @@
         </foreach>
     </select>
 
-    <select id="getUserInfoByIdCardNos" resultType="com.gientech.iot.user.api.pojo.vo.UserDetailResultVO">
+    <select id="getUserInfoByIdCardNos" resultType="top.dabaibai.user.api.pojo.vo.UserDetailResultVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -158,7 +158,7 @@
         </foreach>
     </select>
 
-    <select id="getUserInfoByCodes" resultType="com.gientech.iot.user.api.pojo.vo.UserDetailResultVO">
+    <select id="getUserInfoByCodes" resultType="top.dabaibai.user.api.pojo.vo.UserDetailResultVO">
         SELECT
         u.*,
         u.id as user_id,
@@ -176,7 +176,7 @@
         </foreach>
     </select>
 
-    <select id="getLoginInfoByUsernameOrPhone" resultType="com.gientech.iot.user.api.pojo.vo.UserLoginVO">
+    <select id="getLoginInfoByUsernameOrPhone" resultType="top.dabaibai.user.api.pojo.vo.UserLoginVO">
         SELECT
         u.*,
         u.id as user_id,

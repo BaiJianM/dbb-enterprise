@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gientech.iot.user.biz.mapper.EnterpriseMapper">
+<mapper namespace="top.dabaibai.user.biz.mapper.EnterpriseMapper">
 
     <!--企业信息查询基础字段-->
     <sql id="enterpriseInfo">
@@ -35,7 +35,7 @@
         ${alias}password_policy_id AS passwordPolicyId
     </sql>
 
-    <select id="searchByParam" resultType="com.gientech.iot.user.api.pojo.vo.EnterpriseSearchResultVO">
+    <select id="searchByParam" resultType="top.dabaibai.user.api.pojo.vo.EnterpriseSearchResultVO">
         select
         <include refid="enterpriseInfo">
             <property name="alias" value="e."/>

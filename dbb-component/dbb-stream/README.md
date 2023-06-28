@@ -1,4 +1,4 @@
-## Gientech-Stream 模块使用手册
+## Dbb-Stream 模块使用手册
 
 ### [Spring Cloud Stream 官方文档](https://docs.spring.io/spring-cloud-stream/docs/3.2.2/reference/html/spring-cloud-stream.html#spring-cloud-stream-reference)
 
@@ -22,18 +22,18 @@
 
 ### 接口说明
 
-#### 消费者监听（GientechConsumerListener接口类与@GientechMQListener注解）
+#### 消费者监听（DbbConsumerListener接口类与@DbbMQListener注解）
 
 ```
-1、实现GientechConsumerListener接口中的onMessage方法可进行消息监听，允许多个实现
-2、在实现了GientechConsumerListener接口的所有实现类上必须标注@GientechMQListener注解，并提供监听的tag标签，消息会经由tag进行分发路由
-3、在常量类GientechMQConstant.Headers给出了差异化消息队列的特殊标签，可通过阅读Spring Cloud Stream官方文档进行不同消息队列的特殊消息实现
+1、实现DbbConsumerListener接口中的onMessage方法可进行消息监听，允许多个实现
+2、在实现了DbbConsumerListener接口的所有实现类上必须标注@DbbMQListener注解，并提供监听的tag标签，消息会经由tag进行分发路由
+3、在常量类DbbMQConstant.Headers给出了差异化消息队列的特殊标签，可通过阅读Spring Cloud Stream官方文档进行不同消息队列的特殊消息实现
 ```
 
 #### 统一化延时消息实现
 
 ```
-1、com.gientech.iot.stream.producer.delay包下提供了延时消息的存储等功能实现，延时消息运行时默认存储于内存，并同步持久化未发送消息与发送失败的消息于本地缓存文件当中
+1、top.dabaibai.stream.producer.delay包下提供了延时消息的存储等功能实现，延时消息运行时默认存储于内存，并同步持久化未发送消息与发送失败的消息于本地缓存文件当中
 2、对于延时消息的存储实现，调用者可通过实现DelayMessageStoreService接口的方法来达到不同方式的存储
 注：
 	1.因默认延时消息的存储由本地缓存文件实现，故而存在多节点下服务宕机导致的消息丢失情况
@@ -48,8 +48,8 @@
 
 ```xml
 <dependency>
-    <groupId>com.gientech.iot</groupId>
-    <artifactId>gientech-stream</artifactId>
+    <groupId>top.dabaibai</groupId>
+    <artifactId>dbb-stream</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
@@ -65,18 +65,18 @@
 @RequiredArgsConstructor(onConstructor_ = {@Autowired})
 public class TestProducer {
 
-    private final GientechProducer gientechProducer;
+    private final DbbProducer dbbProducer;
 
     // 异步带回调
     public void testStreamBridgeRocketMQ(String outputChannelName) {
         DoTest doTest = new DoTest();
         doTest.setName("测试RocketMQ消息发送");
-        GientechMessage gientechMessage = GientechMessage.builder()
+        DbbMessage dbbMessage = DbbMessage.builder()
                 .msg(JSON.toJSONString(doTest))
                 .tag("tag1")
                 .build();
         try {
-            gientechProducer.sendWithAsync(gientechMessage, () -> log.info("成功的回调"), () -> log.info("失败的回调"), outputChannelName);
+            dbbProducer.sendWithAsync(dbbMessage, () -> log.info("成功的回调"), () -> log.info("失败的回调"), outputChannelName);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -86,24 +86,24 @@ public class TestProducer {
     public void testStreamBridgeRocketTransaction() {
         DoTest doTest = new DoTest();
         doTest.setName("测试StreamBridgeRocketmq事务消息发送");
-        GientechMessage gientechMessage = GientechMessage.builder()
+        DbbMessage dbbMessage = DbbMessage.builder()
                 .msg(JSON.toJSONString(doTest))
                 .tag("tag1")
-                .header(GientechMQConstant.Headers.TRANSACTIONAL_ARGS, "binder")
+                .header(DbbMQConstant.Headers.TRANSACTIONAL_ARGS, "binder")
                 .build();
 
         doTest.setName("测试StreamBridgeRocketmq事务消息发送-1");
-        GientechMessage gientechMessage2 = GientechMessage.builder()
+        DbbMessage dbbMessage2 = DbbMessage.builder()
                 .msg(JSON.toJSONString(doTest))
                 .tag("tag1")
-                .header(GientechMQConstant.Headers.TRANSACTIONAL_ARGS, "binder")
+                .header(DbbMQConstant.Headers.TRANSACTIONAL_ARGS, "binder")
                 .build();
 
         try {
-            gientechProducer.sendWithAsync(gientechMessage, 3L, TimeUnit.SECONDS);
-            gientechProducer.sendWithAsync(gientechMessage2, 10L, TimeUnit.SECONDS);
+            dbbProducer.sendWithAsync(dbbMessage, 3L, TimeUnit.SECONDS);
+            dbbProducer.sendWithAsync(dbbMessage2, 10L, TimeUnit.SECONDS);
             TimeUnit.SECONDS.sleep(1);
-            log.info("当前有 {} 任务正在排队", gientechProducer.getPendingMessage());
+            log.info("当前有 {} 任务正在排队", dbbProducer.getPendingMessage());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -111,13 +111,13 @@ public class TestProducer {
 }
 
 // 消息接收
-// 使用@GientechMQListener注解与GientechConsumerListener接口搭配使用
+// 使用@DbbMQListener注解与DbbConsumerListener接口搭配使用
 // 这里的tag就是要监听的消息业务标识，为数组形式，可监听多个
-@GientechMQListener(tags = {"tag1"})
-public class TestConsumerListener implements GientechConsumerListener {
+@DbbMQListener(tags = {"tag1"})
+public class TestConsumerListener implements DbbConsumerListener {
 
     @Override
-    public void onMessage(GientechMessage message) {
+    public void onMessage(DbbMessage message) {
         log.info("接收到消息: {}", message);
     }
 }
