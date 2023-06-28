@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.gientech.iot</groupId>
+        <artifactId>gientech-component</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>gientech-skywalking</artifactId>
+
+    <dependencies>
+        <!--SkyWalking链路追踪相关依赖-->
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-trace</artifactId>
+            <version>8.10.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-logback-1.x</artifactId>
+            <version>8.10.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-log4j-2.x</artifactId>
+            <version>8.10.0</version>
+        </dependency>
+    </dependencies>
+
+</project>

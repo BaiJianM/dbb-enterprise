@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>gientech-web</artifactId>
+        <groupId>com.gientech.iot</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--框架web开发启动依赖-->
+    <artifactId>gientech-web-starter</artifactId>
+
+    <dependencies>
+        <!--web请求参数自定义校验模块-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-web-validation</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--web全局配置模块-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-web-configuration</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--日志模块(系统日志及操作日志)-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-log-core</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.gientech.iot</groupId>
+                    <artifactId>gientech-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.gientech.iot</groupId>
+                    <artifactId>gientech-web-commons</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--接口文档模块-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-swaggerdoc</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--持久化数据库插件及配置模块-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-database</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.gientech.iot</groupId>
+                    <artifactId>gientech-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--统一服务注册与发现及配置中心模块-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-nacos</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+</project>

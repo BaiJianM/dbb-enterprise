@@ -1,0 +1,56 @@
+spring:
+  cloud:
+    # spring-cloud-stream的消息通道前缀、消息监听函数的bean名称
+    function:
+      definition: gientech
+    stream:
+      default-binder: kafka
+      # stream与kafka的集成配置
+      kafka:
+        binder:
+          # broker列表，集群模式多个broker使用数组形式配置
+          brokers: 47.116.12.196:9092
+          # 是否自动创建topic
+          auto-create-topics: true
+          # 是否自动分区
+          auto-add-partitions: true
+          # 全局最小分区数
+          # 注：如果配置了spring.cloud.stream.bindings.<channelName>.producer.partitionCount属性，则以二者最大值为主
+          minPartitionCount: 4
+        # kafka特性配置
+        bindings:
+          # 消息输入通道(接收)
+          gientech-in-0:
+            # 消费者配置
+            consumer:
+              # 是否启用死信队列
+              enable-dlq: true
+              # 死信队列分区(enable-dlq配置为true时生效)
+              # 1、如果属性设置为1，并且没有配置实现了DlqPartitionFunction接口的Bean，那么所有死信消息写入partition 0
+              # 2、如果属性设置大于1，则必须提供实现了DlqPartitionFunction接口的Bean，否则将抛出异常。实际大小受binder中的minPartitionCount配置影响
+              dlq-partitions: 1
+              # 接收死信消息的topic名称，若不指定，则以error.<destination>.<group>为默认名称
+              dlq-name: gientech-dead-letter-queue
+              # 是否启用消费者组中的消费者重平衡
+              # 如果为true，可基于spring.cloud.stream.instanceCount和spring.cloud.stream.instanceIndex进行设置
+              auto-rebalance-enabled: true
+          # 消息输出通道(发送)
+          gientech-out-0:
+            # 生产者配置
+            producer:
+              # 是否同步发送消息
+              sync: false
+      # 通用集成配置
+      bindings:
+        # 通用消息输入通道(需与binder中的输入通道名保持一致)
+        gientech-in-0:
+          # rabbitmq中的exchange，kafka、rocketmq中的topic
+          destination: test-topic
+          # 消息类型
+          content-type: application/json
+          # 消费者组
+          group: test-group
+        # 通用消息输出通道(需与binder中的输出通道名保持一致)
+        gientech-out-0:
+          destination: test-topic
+          content-type: application/json

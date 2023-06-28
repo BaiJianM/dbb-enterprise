@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>gientech</artifactId>
+        <groupId>com.gientech.iot</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--框架组件模块-->
+    <artifactId>gientech-component</artifactId>
+    <packaging>pom</packaging>
+
+    <!--模块依赖-->
+    <modules>
+        <module>gientech-seata</module>
+        <module>gientech-sentinel</module>
+        <module>gientech-stream</module>
+        <module>gientech-nacos</module>
+        <module>gientech-skywalking</module>
+    </modules>
+
+</project>

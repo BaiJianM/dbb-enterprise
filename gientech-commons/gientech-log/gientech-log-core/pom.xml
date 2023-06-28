@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>gientech-log</artifactId>
+        <groupId>com.gientech.iot</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--日志模块(系统日志及操作日志)-->
+    <artifactId>gientech-log-core</artifactId>
+
+    <dependencies>
+        <!--自定义日志注解-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-log-annotations</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!-- aop切面 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.9</version>
+        </dependency>
+        <!--log4j2依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+        <!--框架核心依赖-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--web通用模块-->
+        <dependency>
+            <groupId>com.gientech.iot</groupId>
+            <artifactId>gientech-web-commons</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
