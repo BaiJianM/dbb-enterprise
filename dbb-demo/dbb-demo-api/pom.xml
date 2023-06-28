@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dbb-demo</artifactId>
+        <groupId>top.dabaibai</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--框架测试模块外部依赖子模块-->
+    <artifactId>dbb-demo-api</artifactId>
+
+    <dependencies>
+        <!--swagger注解-->
+        <dependency>
+            <groupId>io.swagger.core.v3</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>${swagger.annotations.version}</version>
+        </dependency>
+        <!--自定义日志注解-->
+        <dependency>
+            <groupId>top.dabaibai</groupId>
+            <artifactId>dbb-log-annotations</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--自定义feign模块-->
+        <dependency>
+            <groupId>top.dabaibai</groupId>
+            <artifactId>dbb-feign</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>top.dabaibai</groupId>
+            <artifactId>dbb-web-validation</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+</project>

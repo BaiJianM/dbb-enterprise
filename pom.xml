@@ -4,21 +4,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!--项目标识需自定义-->
-    <artifactId>gientech</artifactId>
-    <groupId>com.gientech.iot</groupId>
+    <artifactId>dbb</artifactId>
+    <groupId>top.dabaibai</groupId>
     <version>1.0.0</version>
-    <name>gientech-iot-framework</name>
+    <name>dbb-framework</name>
     <packaging>pom</packaging>
     <description>A Framework For Enterprise</description>
 
     <!--模块依赖-->
     <modules>
-        <module>gientech-commons</module>
-        <module>gientech-component</module>
-        <module>gientech-gateway</module>
-        <module>gientech-user</module>
-        <module>gientech-demo</module>
-        <module>gientech-test</module>
+        <module>dbb-commons</module>
+        <module>dbb-component</module>
+        <module>dbb-gateway</module>
+        <module>dbb-user</module>
+        <module>dbb-demo</module>
+        <module>dbb-test</module>
     </modules>
 
     <properties>
@@ -30,7 +30,7 @@
         <maven.plugin.version>3.8.1</maven.plugin.version>
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <!--jdk版本-->
-        <java.version>8</java.version>
+        <java.version>17</java.version>
         <!--SpringBoot版本-->
         <spring-boot.version>2.6.3</spring-boot.version>
         <!--SpringCloud版本-->
