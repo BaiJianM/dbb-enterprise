@@ -9,7 +9,7 @@
     <version>1.0.0</version>
     <name>gientech-iot-framework</name>
     <packaging>pom</packaging>
-    <description>Gientech framework for Spring Cloud Alibaba</description>
+    <description>A Framework For Enterprise</description>
 
     <!--模块依赖-->
     <modules>
