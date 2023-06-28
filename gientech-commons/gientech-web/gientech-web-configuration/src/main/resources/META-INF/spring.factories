@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.gientech.iot.web.configuration.GientechWebAutoConfiguration,\
-com.gientech.iot.web.configuration.authcode.KaptchaAutoConfiguration
