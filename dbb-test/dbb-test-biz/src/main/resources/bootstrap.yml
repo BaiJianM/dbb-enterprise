@@ -1,10 +1,10 @@
 spring:
+  application:
+    name: dbb-test
   servlet:
     multipart:
       max-request-size: 10GB
       max-file-size: 10GB
-  application:
-    name: dbb-test
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher

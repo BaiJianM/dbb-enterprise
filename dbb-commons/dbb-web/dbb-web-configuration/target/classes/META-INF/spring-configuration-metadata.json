@@ -1,26 +1,26 @@
 {
   "groups": [
     {
-      "name": "gientech.kaptcha",
+      "name": "dbb.kaptcha",
       "type": "top.dabaibai.web.configuration.authcode.KaptchaProperties",
       "sourceType": "top.dabaibai.web.configuration.authcode.KaptchaProperties"
     }
   ],
   "properties": [
     {
-      "name": "gientech.kaptcha.auth-code-type",
+      "name": "dbb.kaptcha.auth-code-type",
       "type": "top.dabaibai.web.configuration.authcode.AuthCodeTypeEnum",
       "description": "图形验证码类型，默认数字类型",
       "sourceType": "top.dabaibai.web.configuration.authcode.KaptchaProperties"
     },
     {
-      "name": "gientech.kaptcha.is-enable",
+      "name": "dbb.kaptcha.is-enable",
       "type": "java.lang.Boolean",
       "description": "是否开启图形验证码验证",
       "sourceType": "top.dabaibai.web.configuration.authcode.KaptchaProperties"
     },
     {
-      "name": "gientech.kaptcha.timeout",
+      "name": "dbb.kaptcha.timeout",
       "type": "java.lang.Integer",
       "description": "图形验证码过期时间，默认五分钟",
       "sourceType": "top.dabaibai.web.configuration.authcode.KaptchaProperties"

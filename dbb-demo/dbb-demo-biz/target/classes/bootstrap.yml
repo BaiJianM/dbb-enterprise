@@ -1,10 +1,10 @@
 spring:
+  application:
+    name: dbb-demo
   servlet:
     multipart:
       max-request-size: 10GB
       max-file-size: 10GB
-  application:
-    name: gientech-demo
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -13,9 +13,9 @@ spring:
       config:
         file-extension: yml
         server-addr: 10.211.55.7:8848
-        group: GIENTECH
+        group: DBB
         namespace: 8e1e0593-47ec-4bda-917f-89c6aef05457
       discovery:
         server-addr: 10.211.55.7:8848
-        group: GIENTECH
+        group: DBB
         namespace: 8e1e0593-47ec-4bda-917f-89c6aef05457

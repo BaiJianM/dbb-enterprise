@@ -1,43 +1,43 @@
 {
   "groups": [
     {
-      "name": "gientech.redis",
+      "name": "dbb.redis",
       "type": "top.dabaibai.redis.properties.RedisCustomProperties",
       "sourceType": "top.dabaibai.redis.properties.RedisCustomProperties"
     },
     {
-      "name": "gientech.redis.spring-cache-properties",
+      "name": "dbb.redis.spring-cache-properties",
       "type": "top.dabaibai.redis.properties.CustomSpringCacheProperties",
       "sourceType": "top.dabaibai.redis.properties.CustomSpringCacheProperties"
     }
   ],
   "properties": [
     {
-      "name": "gientech.redis.spring-cache-properties",
+      "name": "dbb.redis.spring-cache-properties",
       "type": "top.dabaibai.redis.properties.CustomSpringCacheProperties",
       "description": "Spring Cache自定义配置",
       "sourceType": "top.dabaibai.redis.properties.RedisCustomProperties"
     },
     {
-      "name": "gientech.redis.spring-cache-properties.caching-null-value",
+      "name": "dbb.redis.spring-cache-properties.caching-null-value",
       "type": "java.lang.Boolean",
       "description": "是否缓存空值，默认设置为false，防止缓存击穿",
       "sourceType": "top.dabaibai.redis.properties.CustomSpringCacheProperties"
     },
     {
-      "name": "gientech.redis.spring-cache-properties.key-ttl",
+      "name": "dbb.redis.spring-cache-properties.key-ttl",
       "type": "java.lang.Integer",
       "description": "key的超时时间（单位：毫秒），默认-1永不过期",
       "sourceType": "top.dabaibai.redis.properties.CustomSpringCacheProperties"
     },
     {
-      "name": "gientech.redis.spring-cache-properties.use-key-prefix",
+      "name": "dbb.redis.spring-cache-properties.use-key-prefix",
       "type": "java.lang.Boolean",
       "description": "是否使用spring cache配置的（或注解中使用value\/cacheNames）作为统一前缀，默认开启，为业务区分",
       "sourceType": "top.dabaibai.redis.properties.CustomSpringCacheProperties"
     },
     {
-      "name": "gientech.redis.use-spring-cache",
+      "name": "dbb.redis.use-spring-cache",
       "type": "java.lang.Boolean",
       "description": "是否使用Redis作为Spring Cache的缓存管理器实现",
       "sourceType": "top.dabaibai.redis.properties.RedisCustomProperties"

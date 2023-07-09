@@ -1,6 +1,6 @@
 spring:
   application:
-    name: gientech-user
+    name: dbb-user
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -9,9 +9,9 @@ spring:
       config:
         file-extension: yml
         server-addr: 10.211.55.7:8848
-        group: GIENTECH
+        group: DBB
         namespace: 8e1e0593-47ec-4bda-917f-89c6aef05457
       discovery:
         server-addr: 10.211.55.7:8848
-        group: GIENTECH
+        group: DBB
         namespace: 8e1e0593-47ec-4bda-917f-89c6aef05457

@@ -32,11 +32,11 @@
         <!--jdk版本-->
         <java.version>17</java.version>
         <!--SpringBoot版本-->
-        <spring-boot.version>2.6.3</spring-boot.version>
+        <spring-boot.version>2.6.13</spring-boot.version>
         <!--SpringCloud版本-->
-        <spring-cloud.version>2021.0.1</spring-cloud.version>
+        <spring-cloud.version>2021.0.5</spring-cloud.version>
         <!--SpringCloud Alibaba版本-->
-        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2021.0.5.0</spring-cloud-alibaba.version>
 
         <!--中间件-->
         <!--elasticsearch版本-->

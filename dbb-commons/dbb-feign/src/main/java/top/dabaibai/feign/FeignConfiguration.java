@@ -4,6 +4,7 @@ import com.alibaba.fastjson.parser.Feature;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
+import org.springframework.context.annotation.Primary;
 import top.dabaibai.feign.intercepter.FeignRequestInterceptor;
 import top.dabaibai.feign.intercepter.FeignResponseInterceptor;
 import feign.Logger;
@@ -112,9 +113,11 @@ public class FeignConfiguration {
      * @version: 1.0
      */
     @Bean
+    @Primary
     @ConditionalOnBean(FeignResponseInterceptor.class)
-    public OkHttpClient.Builder okHttpClientBuilder(FeignResponseInterceptor interceptor) {
-        return new OkHttpClient.Builder().addInterceptor(new OkHttpClientResponseInterceptor(interceptor));
+    public OkHttpClient.Builder customOkHttpClientBuilder(FeignResponseInterceptor interceptor,
+                                                          OkHttpClient.Builder builder) {
+        return builder.addInterceptor(new OkHttpClientResponseInterceptor(interceptor));
     }
 
     /**
