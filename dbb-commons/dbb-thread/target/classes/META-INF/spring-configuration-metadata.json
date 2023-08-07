@@ -2,8 +2,8 @@
   "groups": [
     {
       "name": "dbb.thread",
-      "type": "top.dabaibai.thread.CustomThreadProperties",
-      "sourceType": "top.dabaibai.thread.CustomThreadProperties"
+      "type": "top.dabaibai.thread.pool.CustomThreadProperties",
+      "sourceType": "top.dabaibai.thread.pool.CustomThreadProperties"
     }
   ],
   "properties": [
@@ -11,25 +11,25 @@
       "name": "dbb.thread.core-pool-size",
       "type": "java.lang.Integer",
       "description": "核心线程数，默认等于机器CPU核心数",
-      "sourceType": "top.dabaibai.thread.CustomThreadProperties"
+      "sourceType": "top.dabaibai.thread.pool.CustomThreadProperties"
     },
     {
       "name": "dbb.thread.max-pool-size",
       "type": "java.lang.Integer",
       "description": "最大线程数，默认等于机器CPU核心数 * 2",
-      "sourceType": "top.dabaibai.thread.CustomThreadProperties"
+      "sourceType": "top.dabaibai.thread.pool.CustomThreadProperties"
     },
     {
       "name": "dbb.thread.queue-capacity",
       "type": "java.lang.Integer",
       "description": "队列大小",
-      "sourceType": "top.dabaibai.thread.CustomThreadProperties"
+      "sourceType": "top.dabaibai.thread.pool.CustomThreadProperties"
     },
     {
       "name": "dbb.thread.thread-name",
       "type": "java.lang.String",
       "description": "线程名前缀",
-      "sourceType": "top.dabaibai.thread.CustomThreadProperties"
+      "sourceType": "top.dabaibai.thread.pool.CustomThreadProperties"
     }
   ],
   "hints": []

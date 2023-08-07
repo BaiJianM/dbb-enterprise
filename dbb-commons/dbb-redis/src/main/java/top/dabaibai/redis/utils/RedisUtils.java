@@ -1567,7 +1567,7 @@ public class RedisUtils {
      * @return: java.lang.Boolean
      * @version: 1.0
      */
-    public Boolean lock(String lockKey, String requestId, long expireTime) {
+    private Boolean lock(String lockKey, String requestId, long expireTime) {
         return redisTemplate.boundValueOps(lockKey).setIfAbsent(requestId, expireTime, TimeUnit.MILLISECONDS);
     }
 

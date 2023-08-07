@@ -1,5 +1,9 @@
 package top.dabaibai.user.biz.controller;
 
+import top.dabaibai.log.annotations.OperationLog;
+import top.dabaibai.log.core.context.LogContext;
+import top.dabaibai.log.core.enums.LogTypeEnum;
+import top.dabaibai.user.api.enums.LoginTypeEnum;
 import top.dabaibai.user.api.pojo.dto.*;
 import top.dabaibai.user.api.pojo.vo.RoleAuthUserVO;
 import top.dabaibai.user.api.pojo.vo.RoleCreateResultVO;
@@ -236,6 +240,10 @@ public class RoleController {
      * @return: top.dabaibai.global.response.DbbResponse<java.lang.Void>
      * @version: 1.0
      */
+    // @OperationLog(bizEvent = "#event",
+    //         msg = "'【' + #user.realName + '】成功登录【' + #system.systemName + '】系统'",
+    //         operatorId = "#user.userId", operatorCode = "#user.username", operatorName = "#user.realName",
+    //         tag = "#tag")
     @Operation(summary = "启用或禁用角色")
     @Parameters({
             @Parameter(name = "roleId", description = "角色id", required = true),
@@ -248,6 +256,10 @@ public class RoleController {
             @RequestParam("roleId") Long roleId,
             @NotNull(message = "启用或禁用，isEnable不能为null且为布尔值")
             @RequestParam("isEnable") Boolean isEnable) {
+        // LogContext.putVariables("event", LoginTypeEnum.LOGIN.getCode());
+        // LogContext.putVariables("tag", LogTypeEnum.LOGIN_LOG.getCode());
+        // LogContext.putVariables("user", userInfo);
+        // LogContext.putVariables("system", systemInfo);
         roleService.changeStatus(roleId, isEnable);
         return DbbResponse.success();
     }

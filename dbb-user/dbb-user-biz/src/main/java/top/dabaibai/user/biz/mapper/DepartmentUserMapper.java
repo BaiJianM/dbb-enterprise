@@ -67,7 +67,7 @@ public interface DepartmentUserMapper extends BaseMapper<SysDepartmentUser> {
 
     /**
      * @param userIds 用户id列表
-     * @description: 删除指定用户列表下的关联数据
+     * @description: 删除指定用户列表下关联部门的数据
      * @author: 白剑民
      * @date: 2022-10-26 14:44:04
      * @return: java.util.List<java.lang.Long>

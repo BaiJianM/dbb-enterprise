@@ -6,7 +6,7 @@ import top.dabaibai.gateway.constant.GatewayConstants;
 import top.dabaibai.gateway.manager.authentication.BaseAuthenticationManager;
 import top.dabaibai.gateway.service.UserService;
 import top.dabaibai.redis.utils.RedisUtils;
-import top.dabaibai.thread.DbbThreadPool;
+import top.dabaibai.thread.pool.DbbThreadPool;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
@@ -125,7 +125,7 @@ public class AccountReactiveAuthenticationManager implements BaseAuthenticationM
             return Mono.error(new CredentialsExpiredException(GatewayConstants.AuthErrorConstant.SYSTEM_FORBIDDEN));
         }
         // 异步处理成功认证后可能存在的登录重试计数缓存
-        DbbThreadPool.initThreadPool().execute(() -> {
+        DbbThreadPool.init().execute(() -> {
             redisUtils.hasKey(retryKey).ifPresent(f -> redisUtils.delete(retryKey));
         });
         Authentication auth = new UsernamePasswordAuthenticationToken(user, password, user.getAuthorities());

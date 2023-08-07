@@ -1,6 +1,8 @@
-package top.dabaibai.thread;
+package top.dabaibai.thread.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @description: 线程执行任务对象
@@ -8,9 +10,11 @@ import lombok.Data;
  * @dateTime: 2022/6/29 09:54
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Task {
     /**
-     * 对象索引
+     * 数据索引
      */
     private Integer index;
     /**

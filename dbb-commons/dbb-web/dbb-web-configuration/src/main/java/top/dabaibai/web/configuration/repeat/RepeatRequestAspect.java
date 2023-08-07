@@ -34,16 +34,18 @@ public class RepeatRequestAspect {
      * @author: 白剑民
      * @date: 2023-04-26 10:48:48
      * @return: void
-     * @version: 1.0
+     * @version: 1.1
      */
     @Before("@annotation(top.dabaibai.web.configuration.repeat.RepeatRequest)")
     public void handle(JoinPoint joinPoint) throws NoSuchMethodException {
         RepeatRequest repeatRequest = this.getDeclaredAnnotation(joinPoint);
         String methodPath = joinPoint.getSignature().getDeclaringTypeName() + CharUtil.DOT + joinPoint.getSignature().getName();
-        // 关于key的生成规则可以自己定义 本项目需求是对每个方法都加上限流功能，如果你只是针对ip地址限流，那么key只需要只用ip就好
+        // 关于key的生成规则可以自己定义 本项目需求是对每个方法都加上限流功能，如果只是针对ip地址限流，那么key只需要只用ip就好
         String redisKey = UserInfoUtils.getUserInfo().getIpAddress() + methodPath;
-        if (!redisUtils.lock(redisKey, redisKey, repeatRequest.expired() * 1000)) {
+        if (redisUtils.get(redisKey).isPresent()) {
             throw new DbbException(repeatRequest.message());
+        } else {
+            redisUtils.setEx(redisKey, redisKey, repeatRequest.expired(), repeatRequest.timeUnit());
         }
     }
 

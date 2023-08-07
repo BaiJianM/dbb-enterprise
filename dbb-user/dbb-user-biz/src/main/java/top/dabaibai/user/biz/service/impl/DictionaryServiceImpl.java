@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import top.dabaibai.core.utils.BeanConvertUtils;
 import top.dabaibai.core.utils.TreeUtils;
 import top.dabaibai.redis.utils.RedisUtils;
-import top.dabaibai.thread.DbbThreadPool;
+import top.dabaibai.thread.pool.DbbThreadPool;
 import top.dabaibai.user.api.pojo.dto.DictCreateDTO;
 import top.dabaibai.user.api.pojo.dto.DictSearchDTO;
 import top.dabaibai.user.api.pojo.dto.DictUpdateDTO;
@@ -147,7 +147,7 @@ public class DictionaryServiceImpl extends ServiceImpl<DictionaryMapper, SysDict
      */
     private void dictCache(boolean hasCache, String cacheKey) {
         // 异步线程缓存所有字典数据
-        DbbThreadPool.initThreadPool().execute(() -> {
+        DbbThreadPool.init().execute(() -> {
             // 没有缓存的时候才生成
             if (!hasCache) {
                 String requestId = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));

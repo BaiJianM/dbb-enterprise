@@ -26,4 +26,6 @@ public interface DoTestService {
     void seata();
 
     void testCopy();
+
+    void testThreadModel();
 }

@@ -1,4 +1,4 @@
-package top.dabaibai.thread;
+package top.dabaibai.thread.pool;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

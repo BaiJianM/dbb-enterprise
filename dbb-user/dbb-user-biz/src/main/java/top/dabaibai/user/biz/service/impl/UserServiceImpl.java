@@ -110,6 +110,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, SysUser> implements
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void delete(List<Long> userIds) {
+        // 先删除用户与部门的关联数据
+        departmentUserService.deleteByUserIds(userIds);
+        // 再删除用户与角色的关联数据
+        userRoleService.deleteByUserIds(userIds);
+        // 最后批量删除用户数据
         userMapper.deleteBatchIds(userIds);
     }
 

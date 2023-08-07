@@ -1,6 +1,7 @@
 package top.dabaibai.demo.biz.service.impl;
 
 import com.alibaba.fastjson2.JSON;
+import com.lmax.disruptor.RingBuffer;
 import top.dabaibai.core.utils.BeanConvertUtils;
 import top.dabaibai.database.annotation.PessimisticLockInterceptor;
 import top.dabaibai.demo.api.pojo.dto.DoTestDTO;
@@ -16,6 +17,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.dabaibai.thread.model.Task;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -38,6 +40,8 @@ public class DoTestServiceImpl implements DoTestService {
     private final ITestService iTestService;
 
     private final Converter converter;
+
+    private final RingBuffer<Task> ringBuffer;
 
     @Override
     public void testGlobalTransaction() {
@@ -134,4 +138,19 @@ public class DoTestServiceImpl implements DoTestService {
         log.info("BeanUtils转换耗时: {}", (System.currentTimeMillis() - s2));
         log.info("BeanUtils属性赋值结果VO: {}", JSON.toJSONString(vo1.stream().findFirst()));
     }
+
+    @Override
+    public void testThreadModel() {
+        long sequence = ringBuffer.next();
+        try {
+            Task task = ringBuffer.get(sequence);
+            task.setData("啊啊啊这是多线程模型-生产/消费者");
+        } catch (Exception e) {
+            log.error("错误信息: {}", e.getMessage());
+        } finally {
+            ringBuffer.publish(sequence);
+        }
+    }
+
+
 }

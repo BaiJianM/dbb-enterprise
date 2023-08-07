@@ -1,6 +1,7 @@
 package top.dabaibai.user.biz.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.apache.ibatis.annotations.Param;
 import top.dabaibai.user.biz.entity.SysUserRole;
 
 import java.util.List;
@@ -31,4 +32,13 @@ public interface UserRoleService extends IService<SysUserRole> {
      * @version: 1.0
      */
     List<Long> getRoleIdsByUserIds(List<Long> userIds);
+
+    /**
+     * @param userIds 用户id列表
+     * @description: 删除用户列表中的所有用户关联角色数据
+     * @author: 白剑民
+     * @date: 2023-08-05 17:34:16
+     * @version: 1.0
+     */
+    void deleteByUserIds(List<Long> userIds);
 }

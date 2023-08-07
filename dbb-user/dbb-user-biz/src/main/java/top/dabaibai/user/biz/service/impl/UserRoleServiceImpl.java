@@ -40,4 +40,11 @@ public class UserRoleServiceImpl extends ServiceImpl<UserRoleMapper, SysUserRole
         }
         return new ArrayList<>();
     }
+
+    @Override
+    public void deleteByUserIds(List<Long> userIds) {
+        if (CollectionUtils.isNotEmpty(userIds)) {
+            userRoleMapper.deleteByUserIds(userIds);
+        }
+    }
 }

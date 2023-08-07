@@ -35,4 +35,13 @@ public interface UserRoleMapper extends BaseMapper<SysUserRole> {
      */
     List<Long> getRoleIdsByUserIds(@Param("userIds") List<Long> userIds);
 
+
+    /**
+     * @param userIds 用户id列表
+     * @description: 删除用户列表中的所有用户关联角色数据
+     * @author: 白剑民
+     * @date: 2023-08-05 17:34:16
+     * @version: 1.0
+     */
+    void deleteByUserIds(@Param("userIds") List<Long> userIds);
 }

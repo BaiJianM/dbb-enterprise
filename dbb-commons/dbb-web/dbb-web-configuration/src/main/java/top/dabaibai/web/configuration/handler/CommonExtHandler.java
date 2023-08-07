@@ -116,6 +116,19 @@ public class CommonExtHandler {
     }
 
     /**
+     * @param i 非法参数异常
+     * @description: 
+     * @author: 白剑民
+     * @date: 2023-08-05 17:19:22
+     * @return: top.dabaibai.web.commons.http.DbbResponse<?>
+     * @version: 1.0
+     */
+    @ExceptionHandler(IllegalArgumentException.class)
+    public DbbResponse<?> validArgument(IllegalArgumentException i) {
+        return null;
+    }
+
+    /**
      * @param e 表单及普通参数异常
      * @description: controller方法中，表单及普通参数的校验
      * @author: 白剑民

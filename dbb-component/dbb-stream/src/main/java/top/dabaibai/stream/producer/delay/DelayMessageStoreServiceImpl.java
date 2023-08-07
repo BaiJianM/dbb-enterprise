@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import top.dabaibai.stream.producer.DbbProducer;
-import top.dabaibai.thread.DbbThreadPool;
+import top.dabaibai.thread.pool.DbbThreadPool;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.BufferedWriter;
@@ -78,7 +78,7 @@ public class DelayMessageStoreServiceImpl implements DelayMessageStoreService {
             int size = notSendList.size();
             CountDownLatch count = new CountDownLatch(size);
             notSendList.forEach(delayMessage -> {
-                DbbThreadPool.initThreadPool().execute(() -> {
+                DbbThreadPool.init().execute(() -> {
                     // 重新计算延时时间
                     long timeout = delayMessage.getTimeout() - System.currentTimeMillis();
                     // 如果小于等于0则立即执行消息发送

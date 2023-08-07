@@ -1,2 +1,3 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-top.dabaibai.thread.CustomThreadPoolAutoConfiguration
+top.dabaibai.thread.pool.CustomThreadPoolAutoConfiguration,\
+top.dabaibai.thread.model.TaskManager

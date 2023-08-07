@@ -9,9 +9,9 @@ import com.alibaba.excel.write.metadata.WriteSheet;
 import com.alibaba.excel.write.metadata.fill.FillConfig;
 import top.dabaibai.core.enums.ExcelTypeEnum;
 import top.dabaibai.core.utils.DateUtils;
-import top.dabaibai.thread.DbbThreadPool;
-import top.dabaibai.thread.Task;
-import top.dabaibai.thread.ThreadNoBlockingModel;
+import top.dabaibai.thread.pool.DbbThreadPool;
+import top.dabaibai.thread.model.Task;
+import top.dabaibai.thread.model.ThreadNoBlockingModel;
 import top.dabaibai.web.commons.http.DbbException;
 import top.dabaibai.web.commons.http.SystemErrorCode;
 import lombok.extern.slf4j.Slf4j;
@@ -27,6 +27,7 @@ import java.io.*;
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Field;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -94,7 +95,7 @@ public class ExcelUtil<T> {
                 fileSuffix = ".xls";
             }
             response.setHeader("Content-Disposition",
-                    "attachment;filename=" + URLEncoder.encode(fileName, "UTF-8") + fileSuffix);
+                    "attachment;filename=" + URLEncoder.encode(fileName, StandardCharsets.UTF_8) + fileSuffix);
             out = response.getOutputStream();
             workbook.write(out);
             workbook.close();
@@ -459,7 +460,7 @@ public class ExcelUtil<T> {
                     pageNum = (int) Math.ceil((double) rowNum / producerThreadNum);
                     cyclicBarrier = new CyclicBarrier(2, model.new Producer(new Task()));
                     // 初始化生产者线程池
-                    Executor producerPool = DbbThreadPool.initThreadPool();
+                    Executor producerPool = DbbThreadPool.init();
                     // 遍历excel行，将读取结果放入生产者线程
                     for (int i = 0; i < producerThreadNum; i++) {
                         final int finalI = i;

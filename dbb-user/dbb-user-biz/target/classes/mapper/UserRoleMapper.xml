@@ -23,4 +23,11 @@
             #{userId}
         </foreach>
     </select>
+
+    <delete id="deleteByUserIds">
+        delete from sys_user_role where user_id in
+        <foreach collection="userIds" item="userId" separator="," open="(" close=")">
+            #{userId}
+        </foreach>
+    </delete>
 </mapper>

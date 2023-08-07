@@ -206,4 +206,11 @@ public class TestController {
     public DbbResponse<String> testSentinel() {
         return DbbResponse.success("成功");
     }
+
+    @Operation(summary = "测试生产者-消费者多线程模型")
+    @GetMapping("/testThreadModel")
+    public DbbResponse<Void> testThreadModel() {
+        testService.testThreadModel();
+        return DbbResponse.success();
+    }
 }

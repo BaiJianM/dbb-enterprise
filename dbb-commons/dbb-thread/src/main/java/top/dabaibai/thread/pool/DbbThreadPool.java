@@ -1,4 +1,4 @@
-package top.dabaibai.thread;
+package top.dabaibai.thread.pool;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
@@ -46,7 +46,7 @@ public class DbbThreadPool {
      * @return: java.util.concurrent.Executor
      * @version: 1.0
      */
-    public static Executor initThreadPool() {
+    public static Executor init() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(CORE_POOL_SIZE);
         executor.setMaxPoolSize(MAX_POOL_SIZE);
