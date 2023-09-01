@@ -19,6 +19,7 @@
         <module>dbb-user</module>
         <module>dbb-demo</module>
         <module>dbb-test</module>
+        <module>dbb-grpc</module>
     </modules>
 
     <properties>
