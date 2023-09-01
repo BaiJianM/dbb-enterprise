@@ -3,6 +3,7 @@ package top.dabaibai.stream.consumer;
 import lombok.Data;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
@@ -17,7 +18,7 @@ import java.util.stream.Collectors;
  * @dateTime: 2023/3/11 11:27
  */
 @Slf4j
-public class ConsumerInitializer implements ApplicationListener<ContextRefreshedEvent> {
+public class ConsumerInitializer implements ApplicationListener<ApplicationStartedEvent> {
 
     /**
      * 初始化标记，仅初始化时执行一次
@@ -38,7 +39,7 @@ public class ConsumerInitializer implements ApplicationListener<ContextRefreshed
     }
 
     @Override
-    public void onApplicationEvent(@NonNull ContextRefreshedEvent event) {
+    public void onApplicationEvent(@NonNull ApplicationStartedEvent event) {
         if (!initTag) {
             // 获取所有实现了自定义消费者接口的实现类
             Map<String, DbbConsumerListener> consumerListeners = applicationContext.getBeansOfType(DbbConsumerListener.class);

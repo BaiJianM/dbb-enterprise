@@ -81,7 +81,7 @@ public class RedisAutoConfiguration {
      * @version: 1.0
      */
     @Bean
-    public RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory,
+    public RedisMessageListenerContainer container(LettuceConnectionFactory connectionFactory,
                                                    ListenerInitializer initializer) {
         RedisMessageListenerContainer container = new RedisMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);

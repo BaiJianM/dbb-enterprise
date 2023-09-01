@@ -1,5 +1,13 @@
 package top.dabaibai.web.configuration.handler;
 
+import org.springframework.core.MethodParameter;
+import org.springframework.http.MediaType;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.server.ServerHttpRequest;
+import org.springframework.http.server.ServerHttpResponse;
+import org.springframework.lang.NonNull;
+import org.springframework.lang.NonNullApi;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 import top.dabaibai.web.commons.http.DbbException;
 import top.dabaibai.web.commons.http.DbbResponse;
 import top.dabaibai.web.commons.http.SystemErrorCode;
@@ -31,7 +39,7 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 @RestControllerAdvice
-public class CommonExtHandler {
+public class CommonExtHandler implements ResponseBodyAdvice<Object> {
 
     /**
      * @param e 未知异常类型
@@ -117,7 +125,7 @@ public class CommonExtHandler {
 
     /**
      * @param i 非法参数异常
-     * @description: 
+     * @description:
      * @author: 白剑民
      * @date: 2023-08-05 17:19:22
      * @return: top.dabaibai.web.commons.http.DbbResponse<?>
@@ -184,4 +192,22 @@ public class CommonExtHandler {
         return DbbResponse.warn(null, e);
     }
 
+    @Override
+    public boolean supports(@NonNull MethodParameter returnType,
+                            @NonNull Class<? extends HttpMessageConverter<?>> converterType) {
+        return true;
+    }
+
+    @Override
+    public Object beforeBodyWrite(Object body, @NonNull MethodParameter returnType,
+                                  @NonNull MediaType selectedContentType,
+                                  @NonNull Class<? extends HttpMessageConverter<?>> selectedConverterType,
+                                  @NonNull ServerHttpRequest request, @NonNull ServerHttpResponse response) {
+        // 如果是封装过的，就直接返回
+        if (body instanceof DbbResponse.ResponseBody) {
+            return body;
+        }
+        // 如果没有封装过就封装一下，并返回body数据，给到下一层封装
+        return DbbResponse.success(body).getBody();
+    }
 }

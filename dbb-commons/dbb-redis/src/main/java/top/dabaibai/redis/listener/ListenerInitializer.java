@@ -1,5 +1,6 @@
 package top.dabaibai.redis.listener;
 
+import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.event.ContextRefreshedEvent;
 import top.dabaibai.redis.annotation.RedisChannel;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +19,7 @@ import java.util.Map;
  * @dateTime: 2023/4/17 14:25
  */
 @Slf4j
-public class ListenerInitializer implements ApplicationListener<ContextRefreshedEvent> {
+public class ListenerInitializer implements ApplicationListener<ApplicationStartedEvent> {
 
     /**
      * 初始化标记，仅初始化时执行一次
@@ -37,7 +38,7 @@ public class ListenerInitializer implements ApplicationListener<ContextRefreshed
     }
 
     @Override
-    public void onApplicationEvent(@NonNull ContextRefreshedEvent event) {
+    public void onApplicationEvent(@NonNull ApplicationStartedEvent event) {
         if (!initTag) {
             // 获取所有实现
             Map<String, MessageListener> listenerImpls = applicationContext.getBeansOfType(MessageListener.class);
