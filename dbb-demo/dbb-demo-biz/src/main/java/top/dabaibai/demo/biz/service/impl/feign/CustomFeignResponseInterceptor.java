@@ -1,10 +1,10 @@
 package top.dabaibai.demo.biz.service.impl.feign;
 
-import top.dabaibai.feign.intercepter.FeignResponseInterceptor;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.Request;
 import okhttp3.Response;
 import org.springframework.stereotype.Component;
+import top.dabaibai.feign.intercepter.FeignResponseInterceptor;
 
 /**
  * @description:

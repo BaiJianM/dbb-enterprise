@@ -1,9 +1,9 @@
 package top.dabaibai.user.api.pojo.vo;
 
-import top.dabaibai.core.pojo.vo.BaseTreeVO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import top.dabaibai.core.pojo.vo.BaseTreeVO;
 
 /**
  * @description: 部门树VO

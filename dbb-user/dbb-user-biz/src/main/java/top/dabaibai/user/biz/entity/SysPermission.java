@@ -1,9 +1,9 @@
 package top.dabaibai.user.biz.entity;
 
-import top.dabaibai.database.entity.BaseEntity;
-import top.dabaibai.user.api.enums.PermissionTypeEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import top.dabaibai.database.entity.BaseEntity;
+import top.dabaibai.user.api.enums.PermissionTypeEnum;
 
 /**
  * @description: 权限信息表

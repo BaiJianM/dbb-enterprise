@@ -1,11 +1,5 @@
 package top.dabaibai.stream;
 
-import top.dabaibai.stream.consumer.ConsumerInitializer;
-import top.dabaibai.stream.handler.DbbMessageHandler;
-import top.dabaibai.stream.producer.DbbProducer;
-import top.dabaibai.stream.producer.delay.DelayMessageStoreService;
-import top.dabaibai.stream.producer.delay.DelayMessageStoreServiceImpl;
-import top.dabaibai.stream.producer.delay.StoreDelayMessageResend;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.cloud.stream.config.BindingServiceProperties;
@@ -15,6 +9,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.messaging.Message;
+import top.dabaibai.stream.consumer.ConsumerInitializer;
+import top.dabaibai.stream.handler.DbbMessageHandler;
+import top.dabaibai.stream.producer.DbbProducer;
+import top.dabaibai.stream.producer.delay.DelayMessageStoreService;
+import top.dabaibai.stream.producer.delay.DelayMessageStoreServiceImpl;
+import top.dabaibai.stream.producer.delay.StoreDelayMessageResend;
 
 import java.util.function.Consumer;
 

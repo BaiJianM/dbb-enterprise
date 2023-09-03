@@ -1,10 +1,10 @@
 package top.dabaibai.core.file.utils;
 
-import top.dabaibai.core.file.config.FileUploadProperties;
-import top.dabaibai.core.pojo.dto.FileUploadDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import top.dabaibai.core.file.config.FileUploadProperties;
+import top.dabaibai.core.pojo.dto.FileUploadDTO;
 
 import java.io.File;
 import java.nio.file.Paths;

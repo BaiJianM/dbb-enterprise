@@ -1,5 +1,13 @@
 package top.dabaibai.user.biz.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 import top.dabaibai.user.api.pojo.dto.DepartmentCreateDTO;
 import top.dabaibai.user.api.pojo.dto.DepartmentSearchDTO;
 import top.dabaibai.user.api.pojo.dto.DepartmentUpdateDTO;
@@ -9,14 +17,6 @@ import top.dabaibai.user.api.pojo.vo.DepartmentSearchResultVO;
 import top.dabaibai.user.api.pojo.vo.DepartmentTreeVO;
 import top.dabaibai.user.biz.service.DepartmentService;
 import top.dabaibai.web.commons.http.DbbResponse;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;

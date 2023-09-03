@@ -1,11 +1,5 @@
 package top.dabaibai.gateway.conf;
 
-import top.dabaibai.gateway.filter.authentication.LoginAuthenticationWebFilter;
-import top.dabaibai.gateway.manager.authentication.account.AccountAuthenticationConverter;
-import top.dabaibai.gateway.manager.authentication.account.AccountReactiveAuthenticationManager;
-import top.dabaibai.gateway.manager.authentication.sms.SmsAuthenticationConverter;
-import top.dabaibai.gateway.manager.authentication.sms.SmsReactiveAuthenticationManager;
-import top.dabaibai.gateway.manager.authorization.CustomReactiveAuthorizationManager;
 import feign.Feign;
 import feign.Request;
 import feign.codec.Decoder;
@@ -25,7 +19,13 @@ import org.springframework.security.web.server.SecurityWebFilterChain;
 import org.springframework.security.web.server.util.matcher.ServerWebExchangeMatchers;
 import org.springframework.stereotype.Component;
 import org.springframework.util.AntPathMatcher;
+import top.dabaibai.gateway.filter.authentication.LoginAuthenticationWebFilter;
 import top.dabaibai.gateway.handler.*;
+import top.dabaibai.gateway.manager.authentication.account.AccountAuthenticationConverter;
+import top.dabaibai.gateway.manager.authentication.account.AccountReactiveAuthenticationManager;
+import top.dabaibai.gateway.manager.authentication.sms.SmsAuthenticationConverter;
+import top.dabaibai.gateway.manager.authentication.sms.SmsReactiveAuthenticationManager;
+import top.dabaibai.gateway.manager.authorization.CustomReactiveAuthorizationManager;
 
 import java.util.concurrent.TimeUnit;
 

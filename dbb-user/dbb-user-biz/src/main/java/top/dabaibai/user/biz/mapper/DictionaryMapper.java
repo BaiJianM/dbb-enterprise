@@ -3,12 +3,12 @@ package top.dabaibai.user.biz.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 import top.dabaibai.user.api.pojo.dto.DictSearchDTO;
 import top.dabaibai.user.api.pojo.vo.DictInfoVO;
 import top.dabaibai.user.api.pojo.vo.DictTreeVO;
 import top.dabaibai.user.biz.entity.SysDictionary;
-import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

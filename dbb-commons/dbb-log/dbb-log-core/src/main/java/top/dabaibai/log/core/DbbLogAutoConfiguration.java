@@ -1,17 +1,17 @@
 package top.dabaibai.log.core;
 
-import top.dabaibai.log.core.aop.SystemLogAspect;
-import top.dabaibai.log.core.properties.LogProperties;
-import top.dabaibai.log.core.function.CustomFunctionObjectDiff;
-import top.dabaibai.log.core.function.CustomFunctionRegistrar;
-import top.dabaibai.log.core.service.ILogService;
-import top.dabaibai.log.core.service.impl.DefaultLogServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import top.dabaibai.log.core.aop.SystemLogAspect;
+import top.dabaibai.log.core.function.CustomFunctionObjectDiff;
+import top.dabaibai.log.core.function.CustomFunctionRegistrar;
+import top.dabaibai.log.core.properties.LogProperties;
+import top.dabaibai.log.core.service.ILogService;
+import top.dabaibai.log.core.service.impl.DefaultLogServiceImpl;
 
 /**
  * @description: 日志记录自动配置

@@ -1,11 +1,11 @@
 package top.dabaibai.stream;
 
-import top.dabaibai.web.commons.http.SystemErrorCode;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.lang.NonNull;
+import top.dabaibai.web.commons.http.SystemErrorCode;
 
 import java.io.Serializable;
 import java.util.HashMap;

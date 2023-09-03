@@ -1,5 +1,6 @@
 package top.dabaibai.core.file.strategy;
 
+import lombok.extern.slf4j.Slf4j;
 import top.dabaibai.core.Constants;
 import top.dabaibai.core.file.utils.FilePathUtils;
 import top.dabaibai.core.pojo.dto.FileUploadDTO;
@@ -8,7 +9,6 @@ import top.dabaibai.core.utils.FileMD5Utils;
 import top.dabaibai.core.utils.FileUtils;
 import top.dabaibai.core.utils.SpringContextUtils;
 import top.dabaibai.redis.utils.RedisUtils;
-import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.io.IOException;

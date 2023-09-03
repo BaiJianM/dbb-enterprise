@@ -1,13 +1,13 @@
 package top.dabaibai.core.file;
 
-import top.dabaibai.core.file.config.FileUploadProperties;
-import top.dabaibai.core.file.strategy.RandomAccessUploadStrategy;
-import top.dabaibai.core.file.utils.FilePathUtils;
-import top.dabaibai.core.file.utils.FileUploadUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import top.dabaibai.core.file.config.FileUploadProperties;
+import top.dabaibai.core.file.strategy.RandomAccessUploadStrategy;
+import top.dabaibai.core.file.utils.FilePathUtils;
+import top.dabaibai.core.file.utils.FileUploadUtils;
 
 import javax.annotation.PostConstruct;
 

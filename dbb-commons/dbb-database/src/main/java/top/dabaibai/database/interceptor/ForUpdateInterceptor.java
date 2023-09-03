@@ -3,7 +3,6 @@ package top.dabaibai.database.interceptor;
 import com.baomidou.mybatisplus.core.toolkit.PluginUtils;
 import com.baomidou.mybatisplus.extension.parser.JsqlParserSupport;
 import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
-import top.dabaibai.database.annotation.PessimisticLockInterceptor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -19,6 +18,7 @@ import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
 import org.springframework.util.StopWatch;
+import top.dabaibai.database.annotation.PessimisticLockInterceptor;
 
 import java.sql.SQLException;
 import java.util.List;

@@ -1,11 +1,11 @@
 package top.dabaibai.user.api.interfaces;
 
-import top.dabaibai.user.api.pojo.vo.UserLoginVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
+import top.dabaibai.user.api.pojo.vo.UserLoginVO;
 
 @FeignClient(contextId = "IUserInfoService", name = "dbb-user", path = "/user")
 public interface IUserInfoService {

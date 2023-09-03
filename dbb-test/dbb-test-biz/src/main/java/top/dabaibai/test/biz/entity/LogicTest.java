@@ -1,8 +1,8 @@
 package top.dabaibai.test.biz.entity;
 
-import top.dabaibai.database.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import top.dabaibai.database.entity.BaseEntity;
 
 /**
  * @description:

@@ -1,11 +1,6 @@
 package top.dabaibai.gateway.manager.authentication.sms;
 
 
-import top.dabaibai.gateway.bean.User;
-import top.dabaibai.gateway.constant.GatewayConstants;
-import top.dabaibai.gateway.manager.authentication.BaseAuthenticationManager;
-import top.dabaibai.gateway.service.UserService;
-import top.dabaibai.redis.utils.RedisUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +9,11 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
+import top.dabaibai.gateway.bean.User;
+import top.dabaibai.gateway.constant.GatewayConstants;
+import top.dabaibai.gateway.manager.authentication.BaseAuthenticationManager;
+import top.dabaibai.gateway.service.UserService;
+import top.dabaibai.redis.utils.RedisUtils;
 
 /**
  * @description: 短信登录会通过该处理类校验账号密码及账号信息

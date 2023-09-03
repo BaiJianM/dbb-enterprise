@@ -1,8 +1,8 @@
 package top.dabaibai.swaggerdoc;
 
-import top.dabaibai.swaggerdoc.properties.SwaggerProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import top.dabaibai.swaggerdoc.properties.SwaggerProperties;
 
 /**
  * @description: Swagger配置类

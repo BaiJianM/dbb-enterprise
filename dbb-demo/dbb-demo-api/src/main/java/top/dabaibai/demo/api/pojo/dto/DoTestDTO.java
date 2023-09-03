@@ -1,7 +1,6 @@
 package top.dabaibai.demo.api.pojo.dto;
 
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @description:

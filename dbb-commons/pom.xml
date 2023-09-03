@@ -27,6 +27,7 @@
         <module>dbb-web</module>
         <module>dbb-thread</module>
         <module>dbb-feign</module>
+        <module>dbb-grpc</module>
     </modules>
 
 </project>

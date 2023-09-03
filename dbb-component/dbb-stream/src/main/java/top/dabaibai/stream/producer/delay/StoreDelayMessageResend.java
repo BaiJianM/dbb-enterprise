@@ -1,7 +1,7 @@
 package top.dabaibai.stream.producer.delay;
 
-import top.dabaibai.stream.producer.DbbProducer;
 import lombok.extern.slf4j.Slf4j;
+import top.dabaibai.stream.producer.DbbProducer;
 
 import javax.annotation.PostConstruct;
 

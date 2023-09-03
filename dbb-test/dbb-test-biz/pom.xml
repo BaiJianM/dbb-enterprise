@@ -38,6 +38,17 @@
             <artifactId>dbb-stream</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>top.dabaibai</groupId>
+            <artifactId>dbb-grpc-api</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>net.devh</groupId>
+                    <artifactId>grpc-server-spring-boot-starter</artifactId>
+                </exclusion>
+            </exclusions>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>

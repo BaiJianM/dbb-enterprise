@@ -2,14 +2,14 @@ package top.dabaibai.user.biz.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import top.dabaibai.user.biz.entity.SysRolePermission;
-import top.dabaibai.user.biz.mapper.RolePermissionMapper;
-import top.dabaibai.user.biz.service.RolePermissionService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.dabaibai.user.biz.entity.SysRolePermission;
+import top.dabaibai.user.biz.mapper.RolePermissionMapper;
+import top.dabaibai.user.biz.service.RolePermissionService;
 
 import java.util.ArrayList;
 import java.util.List;

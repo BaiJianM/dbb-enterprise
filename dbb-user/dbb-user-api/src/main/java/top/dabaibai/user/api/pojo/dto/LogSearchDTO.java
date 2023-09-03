@@ -1,11 +1,11 @@
 package top.dabaibai.user.api.pojo.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import top.dabaibai.log.core.enums.LogTypeEnum;
-import top.dabaibai.web.commons.model.PageDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import top.dabaibai.log.core.enums.LogTypeEnum;
+import top.dabaibai.web.commons.model.PageDTO;
 
 import java.time.LocalDateTime;
 import java.util.List;

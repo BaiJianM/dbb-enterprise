@@ -1,9 +1,9 @@
 package top.dabaibai.database.properties;
 
 import com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DataSourceProperty;
-import top.dabaibai.database.enums.DataSourceType;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import top.dabaibai.database.enums.DataSourceType;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

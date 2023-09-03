@@ -1,11 +1,11 @@
 package top.dabaibai.user.api.pojo.vo;
 
-import top.dabaibai.core.pojo.vo.BaseTreeVO;
-import top.dabaibai.user.api.enums.PermissionTypeEnum;
-import top.dabaibai.user.api.pojo.UserConstants;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import top.dabaibai.core.pojo.vo.BaseTreeVO;
+import top.dabaibai.user.api.enums.PermissionTypeEnum;
+import top.dabaibai.user.api.pojo.UserConstants;
 
 /**
  * @description: 动态路由信息出参

@@ -1,9 +1,9 @@
 package top.dabaibai.demo.biz.config.rabbitmq;
 
-import top.dabaibai.stream.DbbMQConstant;
 import org.springframework.cloud.stream.binder.PartitionKeyExtractorStrategy;
 import org.springframework.messaging.Message;
 import org.springframework.stereotype.Component;
+import top.dabaibai.stream.DbbMQConstant;
 
 /**
  * @description: 自定义分区键提取器（获取分区标识）

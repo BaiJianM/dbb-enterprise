@@ -1,9 +1,6 @@
 package top.dabaibai.web.configuration.repeat;
 
 import cn.hutool.core.util.CharUtil;
-import top.dabaibai.core.utils.UserInfoUtils;
-import top.dabaibai.redis.utils.RedisUtils;
-import top.dabaibai.web.commons.http.DbbException;
 import lombok.RequiredArgsConstructor;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
@@ -12,6 +9,9 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+import top.dabaibai.core.utils.UserInfoUtils;
+import top.dabaibai.redis.utils.RedisUtils;
+import top.dabaibai.web.commons.http.DbbException;
 
 import java.lang.reflect.Method;
 

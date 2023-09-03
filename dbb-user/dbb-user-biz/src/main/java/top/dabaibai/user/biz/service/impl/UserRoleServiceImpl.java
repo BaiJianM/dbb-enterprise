@@ -1,14 +1,14 @@
 package top.dabaibai.user.biz.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import top.dabaibai.user.biz.entity.SysUserRole;
-import top.dabaibai.user.biz.mapper.UserRoleMapper;
-import top.dabaibai.user.biz.service.UserRoleService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.dabaibai.user.biz.entity.SysUserRole;
+import top.dabaibai.user.biz.mapper.UserRoleMapper;
+import top.dabaibai.user.biz.service.UserRoleService;
 
 import java.util.ArrayList;
 import java.util.List;

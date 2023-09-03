@@ -1,7 +1,7 @@
 package top.dabaibai.websocket.annotations;
 
-import top.dabaibai.websocket.Interceptor.AbstractCustomHandshakeInterceptor;
 import org.springframework.stereotype.Component;
+import top.dabaibai.websocket.Interceptor.AbstractCustomHandshakeInterceptor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

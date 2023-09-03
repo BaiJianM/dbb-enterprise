@@ -1,12 +1,12 @@
 package top.dabaibai.demo.biz.entity;
 
-import top.dabaibai.database.entity.BaseEntity;
-import top.dabaibai.demo.api.pojo.dto.DoTestDTO;
-import top.dabaibai.demo.api.pojo.vo.DoTestVO;
 import io.github.linpeilie.annotations.AutoMapper;
 import io.github.linpeilie.annotations.AutoMappers;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import top.dabaibai.database.entity.BaseEntity;
+import top.dabaibai.demo.api.pojo.dto.DoTestDTO;
+import top.dabaibai.demo.api.pojo.vo.DoTestVO;
 
 /**
  * @description:

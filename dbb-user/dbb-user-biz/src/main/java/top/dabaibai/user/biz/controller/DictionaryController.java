@@ -1,5 +1,13 @@
 package top.dabaibai.user.biz.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 import top.dabaibai.core.utils.BeanConvertUtils;
 import top.dabaibai.user.api.pojo.dto.DictCreateDTO;
 import top.dabaibai.user.api.pojo.dto.DictSearchDTO;
@@ -11,14 +19,6 @@ import top.dabaibai.user.biz.entity.SysDictionary;
 import top.dabaibai.user.biz.service.DictionaryService;
 import top.dabaibai.web.commons.http.DbbResponse;
 import top.dabaibai.web.commons.model.PageResultVO;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;

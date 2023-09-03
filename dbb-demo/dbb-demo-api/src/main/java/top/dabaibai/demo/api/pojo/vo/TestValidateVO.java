@@ -1,9 +1,9 @@
 package top.dabaibai.demo.api.pojo.vo;
 
-import top.dabaibai.web.validation.parameter.AuthMobile;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import top.dabaibai.web.validation.parameter.AuthMobile;
 
 /**
  * @description:

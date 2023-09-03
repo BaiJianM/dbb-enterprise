@@ -1,8 +1,8 @@
 package top.dabaibai.user.biz.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import top.dabaibai.user.biz.entity.SysSystem;
 import org.springframework.stereotype.Repository;
+import top.dabaibai.user.biz.entity.SysSystem;
 
 /**
  * @description: 应用子系统Mapper接口

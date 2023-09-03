@@ -1,9 +1,9 @@
 package top.dabaibai.user.biz.entity;
 
-import top.dabaibai.database.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import top.dabaibai.database.entity.BaseEntity;
 
 
 /**

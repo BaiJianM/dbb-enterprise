@@ -1,7 +1,7 @@
 package top.dabaibai.gateway.manager.authentication.account;
 
-import top.dabaibai.gateway.manager.authentication.BaseAuthentication;
 import lombok.Data;
+import top.dabaibai.gateway.manager.authentication.BaseAuthentication;
 
 import javax.validation.constraints.NotBlank;
 

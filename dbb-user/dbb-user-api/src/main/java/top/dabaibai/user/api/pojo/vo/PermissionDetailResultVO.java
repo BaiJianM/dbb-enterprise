@@ -1,9 +1,9 @@
 package top.dabaibai.user.api.pojo.vo;
 
-import top.dabaibai.user.api.enums.PermissionTypeEnum;
-import top.dabaibai.user.api.pojo.dto.PermissionMetaDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+import top.dabaibai.user.api.enums.PermissionTypeEnum;
+import top.dabaibai.user.api.pojo.dto.PermissionMetaDTO;
 
 /**
  * @description: 权限详情VO

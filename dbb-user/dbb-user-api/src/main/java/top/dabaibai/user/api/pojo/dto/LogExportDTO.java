@@ -1,9 +1,9 @@
 package top.dabaibai.user.api.pojo.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import top.dabaibai.log.core.enums.LogTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+import top.dabaibai.log.core.enums.LogTypeEnum;
 
 import java.time.LocalDateTime;
 import java.util.List;

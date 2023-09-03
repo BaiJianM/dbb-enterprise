@@ -1,6 +1,5 @@
 package top.dabaibai.log.core.function;
 
-import top.dabaibai.log.annotations.LogFunction;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
@@ -8,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.expression.spel.support.StandardEvaluationContext;
 import org.springframework.util.StringUtils;
+import top.dabaibai.log.annotations.LogFunction;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;

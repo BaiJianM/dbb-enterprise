@@ -1,8 +1,8 @@
 package top.dabaibai.test.api.interfaces;
 
-import top.dabaibai.web.commons.http.DbbResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import top.dabaibai.web.commons.http.DbbResponse;
 
 /**
  * @description:

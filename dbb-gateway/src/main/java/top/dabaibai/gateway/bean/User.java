@@ -1,10 +1,10 @@
 package top.dabaibai.gateway.bean;
 
 
-import top.dabaibai.user.api.pojo.vo.UserLoginVO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.security.core.userdetails.UserDetails;
+import top.dabaibai.user.api.pojo.vo.UserLoginVO;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,9 +1,5 @@
 package top.dabaibai.gateway.service.impl;
 
-import top.dabaibai.core.utils.BeanConvertUtils;
-import top.dabaibai.gateway.bean.User;
-import top.dabaibai.gateway.service.UserService;
-import top.dabaibai.user.api.interfaces.IUserInfoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +7,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
+import top.dabaibai.core.utils.BeanConvertUtils;
+import top.dabaibai.gateway.bean.User;
+import top.dabaibai.gateway.service.UserService;
+import top.dabaibai.user.api.interfaces.IUserInfoService;
 
 /**
  * @description: 用户信息服务impl

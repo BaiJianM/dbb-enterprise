@@ -1,7 +1,6 @@
 package top.dabaibai.thread.model;
 
 import lombok.extern.slf4j.Slf4j;
-import top.dabaibai.thread.model.Task;
 
 /**
  * @description:

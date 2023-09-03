@@ -1,12 +1,12 @@
 package top.dabaibai.demo.biz.service.impl.redislistener;
 
 import com.alibaba.fastjson.JSON;
-import top.dabaibai.redis.annotation.RedisChannel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.connection.Message;
 import org.springframework.data.redis.connection.MessageListener;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
+import top.dabaibai.redis.annotation.RedisChannel;
 
 import java.nio.charset.StandardCharsets;
 

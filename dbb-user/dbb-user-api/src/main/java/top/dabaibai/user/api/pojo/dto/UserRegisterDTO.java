@@ -1,8 +1,8 @@
 package top.dabaibai.user.api.pojo.dto;
 
-import top.dabaibai.log.annotations.LogDiff;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+import top.dabaibai.log.annotations.LogDiff;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;

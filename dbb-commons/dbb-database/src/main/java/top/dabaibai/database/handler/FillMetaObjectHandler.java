@@ -1,10 +1,10 @@
 package top.dabaibai.database.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
-import top.dabaibai.core.pojo.vo.BaseUserInfoVO;
-import top.dabaibai.core.utils.UserInfoUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.reflection.MetaObject;
+import top.dabaibai.core.pojo.vo.BaseUserInfoVO;
+import top.dabaibai.core.utils.UserInfoUtils;
 
 import java.time.LocalDateTime;
 

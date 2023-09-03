@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+// 指定生成的类为单个，即多个类生成时以内部类形式体现
+option java_multiple_files = false;
+// 定义包路径
+option java_package = "top.dabaibai.grpc.api";
+// 定义生成RPC服务的类名
+option java_outer_classname = "HelloServiceProto";
+
+// 定义请求体
+message HelloRequest {
+  string name = 1;
+}
+
+// 定义响应体
+message HelloResponse {
+  string result = 1;
+}
+
+// 定义服务
+service HelloService {
+  // 定义RPC方法
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}

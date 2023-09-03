@@ -1,10 +1,10 @@
 package top.dabaibai.demo.biz.config.log;
 
-import top.dabaibai.log.core.service.ILogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import top.dabaibai.log.core.service.ILogService;
 
 /**
  * @description:

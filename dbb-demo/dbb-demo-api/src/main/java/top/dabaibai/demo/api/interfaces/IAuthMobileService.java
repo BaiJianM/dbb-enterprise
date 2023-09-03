@@ -1,9 +1,9 @@
 package top.dabaibai.demo.api.interfaces;
 
-import top.dabaibai.demo.api.pojo.vo.TestValidateVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import top.dabaibai.demo.api.pojo.vo.TestValidateVO;
 
 /**
  * @description:

@@ -1,9 +1,9 @@
 package top.dabaibai.user.api.pojo.dto;
 
-import top.dabaibai.web.commons.model.PageDTO;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import top.dabaibai.web.commons.model.PageDTO;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;

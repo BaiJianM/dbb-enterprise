@@ -1,5 +1,7 @@
 package top.dabaibai.core.file.utils;
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 import top.dabaibai.core.Constants;
 import top.dabaibai.core.enums.FileCheckMd5StatusEnum;
 import top.dabaibai.core.file.config.FileUploadProperties;
@@ -10,8 +12,6 @@ import top.dabaibai.core.utils.FileMD5Utils;
 import top.dabaibai.core.utils.FileUtils;
 import top.dabaibai.core.utils.SpringContextUtils;
 import top.dabaibai.redis.utils.RedisUtils;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.FileOutputStream;

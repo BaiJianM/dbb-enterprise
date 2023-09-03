@@ -1,6 +1,5 @@
 package top.dabaibai.gateway.manager.authorization;
 
-import top.dabaibai.gateway.bean.UserGrantedAuthority;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
@@ -14,6 +13,7 @@ import org.springframework.security.web.server.authorization.AuthorizationContex
 import org.springframework.stereotype.Component;
 import org.springframework.util.AntPathMatcher;
 import reactor.core.publisher.Mono;
+import top.dabaibai.gateway.bean.UserGrantedAuthority;
 
 import java.util.Collections;
 import java.util.function.Function;

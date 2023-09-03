@@ -1,9 +1,9 @@
 package top.dabaibai.user.biz.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import top.dabaibai.user.biz.entity.SysDepartmentUser;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+import top.dabaibai.user.biz.entity.SysDepartmentUser;
 
 import java.util.List;
 

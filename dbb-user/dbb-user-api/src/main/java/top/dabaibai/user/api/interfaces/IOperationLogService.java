@@ -1,10 +1,10 @@
 package top.dabaibai.user.api.interfaces;
 
-import top.dabaibai.log.core.pojo.LogDTO;
-import top.dabaibai.log.core.service.ILogService;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import top.dabaibai.log.core.pojo.LogDTO;
+import top.dabaibai.log.core.service.ILogService;
 
 @FeignClient(contextId = "IOperationLogService", name = "dbb-user", path = "/user", primary = false)
 public interface IOperationLogService extends ILogService {

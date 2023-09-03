@@ -1,12 +1,12 @@
 package top.dabaibai.stream.handler;
 
-import top.dabaibai.stream.DbbMessage;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.messaging.Message;
 import top.dabaibai.stream.DbbMQConstant;
+import top.dabaibai.stream.DbbMessage;
 import top.dabaibai.stream.consumer.ConsumerInitializer;
 import top.dabaibai.stream.consumer.DbbConsumerListener;
 import top.dabaibai.stream.consumer.DbbMQListener;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.messaging.Message;
 
 import java.util.Arrays;
 import java.util.Map;

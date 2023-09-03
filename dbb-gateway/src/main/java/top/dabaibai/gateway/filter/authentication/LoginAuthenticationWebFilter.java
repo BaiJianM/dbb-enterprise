@@ -1,9 +1,5 @@
 package top.dabaibai.gateway.filter.authentication;
 
-import top.dabaibai.gateway.manager.authentication.BaseAuthentication;
-import top.dabaibai.gateway.manager.authentication.BaseAuthenticationConverter;
-import top.dabaibai.gateway.manager.authentication.BaseAuthenticationManager;
-import top.dabaibai.gateway.manager.authentication.BaseAuthenticationManagerResolver;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -20,6 +16,10 @@ import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.server.WebFilter;
 import org.springframework.web.server.WebFilterChain;
 import reactor.core.publisher.Mono;
+import top.dabaibai.gateway.manager.authentication.BaseAuthentication;
+import top.dabaibai.gateway.manager.authentication.BaseAuthenticationConverter;
+import top.dabaibai.gateway.manager.authentication.BaseAuthenticationManager;
+import top.dabaibai.gateway.manager.authentication.BaseAuthenticationManagerResolver;
 
 import java.util.function.Function;
 

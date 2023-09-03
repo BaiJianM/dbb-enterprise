@@ -1,9 +1,9 @@
 package top.dabaibai.demo.biz.service.impl.queue.consumer;
 
+import lombok.extern.slf4j.Slf4j;
 import top.dabaibai.stream.DbbMessage;
 import top.dabaibai.stream.consumer.DbbConsumerListener;
 import top.dabaibai.stream.consumer.DbbMQListener;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @description: spring-cloud-stream的消费者示例

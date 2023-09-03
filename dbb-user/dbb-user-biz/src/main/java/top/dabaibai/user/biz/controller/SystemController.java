@@ -1,14 +1,5 @@
 package top.dabaibai.user.biz.controller;
 
-import top.dabaibai.user.api.pojo.dto.SystemCreateDTO;
-import top.dabaibai.user.api.pojo.dto.SystemSearchDTO;
-import top.dabaibai.user.api.pojo.dto.SystemUpdateDTO;
-import top.dabaibai.user.api.pojo.vo.SystemCreateResultVO;
-import top.dabaibai.user.api.pojo.vo.SystemDetailResultVO;
-import top.dabaibai.user.api.pojo.vo.SystemSearchResultVO;
-import top.dabaibai.user.biz.service.SystemService;
-import top.dabaibai.web.commons.http.DbbResponse;
-import top.dabaibai.web.commons.model.PageResultVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
@@ -18,6 +9,15 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import top.dabaibai.user.api.pojo.dto.SystemCreateDTO;
+import top.dabaibai.user.api.pojo.dto.SystemSearchDTO;
+import top.dabaibai.user.api.pojo.dto.SystemUpdateDTO;
+import top.dabaibai.user.api.pojo.vo.SystemCreateResultVO;
+import top.dabaibai.user.api.pojo.vo.SystemDetailResultVO;
+import top.dabaibai.user.api.pojo.vo.SystemSearchResultVO;
+import top.dabaibai.user.biz.service.SystemService;
+import top.dabaibai.web.commons.http.DbbResponse;
+import top.dabaibai.web.commons.model.PageResultVO;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;

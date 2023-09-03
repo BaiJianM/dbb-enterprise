@@ -1,11 +1,5 @@
 package top.dabaibai.user.biz.controller;
 
-import top.dabaibai.user.api.pojo.dto.PermissionCreateDTO;
-import top.dabaibai.user.api.pojo.dto.PermissionSearchDTO;
-import top.dabaibai.user.api.pojo.dto.PermissionUpdateDTO;
-import top.dabaibai.user.api.pojo.vo.*;
-import top.dabaibai.user.biz.service.PermissionService;
-import top.dabaibai.web.commons.http.DbbResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
@@ -15,6 +9,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import top.dabaibai.user.api.pojo.dto.PermissionCreateDTO;
+import top.dabaibai.user.api.pojo.dto.PermissionSearchDTO;
+import top.dabaibai.user.api.pojo.dto.PermissionUpdateDTO;
+import top.dabaibai.user.api.pojo.vo.*;
+import top.dabaibai.user.biz.service.PermissionService;
+import top.dabaibai.web.commons.http.DbbResponse;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Min;

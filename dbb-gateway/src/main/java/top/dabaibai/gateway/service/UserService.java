@@ -1,9 +1,9 @@
 package top.dabaibai.gateway.service;
 
-import top.dabaibai.gateway.bean.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.util.MultiValueMap;
+import top.dabaibai.gateway.bean.User;
 
 /**
  * @description: 用户信息服务

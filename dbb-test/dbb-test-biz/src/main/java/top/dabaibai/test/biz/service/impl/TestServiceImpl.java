@@ -1,12 +1,12 @@
 package top.dabaibai.test.biz.service.impl;
 
-import top.dabaibai.test.biz.entity.LogicTest;
-import top.dabaibai.test.biz.mapper.LogicTestMapper;
-import top.dabaibai.test.biz.service.TestService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.dabaibai.test.biz.entity.LogicTest;
+import top.dabaibai.test.biz.mapper.LogicTestMapper;
+import top.dabaibai.test.biz.service.TestService;
 
 /**
  * @description:

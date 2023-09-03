@@ -1,11 +1,11 @@
 package top.dabaibai.user.biz.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 import top.dabaibai.user.api.pojo.dto.PermissionSearchDTO;
 import top.dabaibai.user.api.pojo.vo.PermissionTreeVO;
 import top.dabaibai.user.biz.entity.SysPermission;
-import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

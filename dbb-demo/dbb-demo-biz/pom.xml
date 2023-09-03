@@ -71,6 +71,11 @@
             <artifactId>dbb-sentinel</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>top.dabaibai</groupId>
+            <artifactId>dbb-grpc-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>

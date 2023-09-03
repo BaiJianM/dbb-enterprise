@@ -2,14 +2,14 @@ package top.dabaibai.user.biz.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 import top.dabaibai.user.api.pojo.dto.UserSearchDTO;
 import top.dabaibai.user.api.pojo.vo.SystemUserInfoVO;
 import top.dabaibai.user.api.pojo.vo.UserDetailResultVO;
 import top.dabaibai.user.api.pojo.vo.UserLoginVO;
 import top.dabaibai.user.api.pojo.vo.UserSearchResultVO;
 import top.dabaibai.user.biz.entity.SysUser;
-import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

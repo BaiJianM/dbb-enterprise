@@ -1,8 +1,8 @@
 package top.dabaibai.stream.producer.delay;
 
-import top.dabaibai.stream.DbbMessage;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import top.dabaibai.stream.DbbMessage;
 
 import java.io.Serializable;
 import java.time.Instant;

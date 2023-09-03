@@ -71,3 +71,11 @@ spring:
         dbb-out-0:
           destination: test-topic
           content-type: application/json
+
+grpc:
+  client:
+    local-grpc-server:
+      address: 'static://127.0.0.1:9898'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext

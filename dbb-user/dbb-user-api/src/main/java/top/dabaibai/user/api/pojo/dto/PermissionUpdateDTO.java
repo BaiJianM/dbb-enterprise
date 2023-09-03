@@ -1,8 +1,8 @@
 package top.dabaibai.user.api.pojo.dto;
 
-import top.dabaibai.user.api.enums.PermissionTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+import top.dabaibai.user.api.enums.PermissionTypeEnum;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;

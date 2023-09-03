@@ -1,9 +1,5 @@
 package top.dabaibai.websocket;
 
-import top.dabaibai.redis.utils.RedisUtils;
-import top.dabaibai.websocket.listener.DistributedWebSocketListener;
-import top.dabaibai.websocket.operation.DefaultWebSocketSender;
-import top.dabaibai.websocket.server.CustomWebSocketConfigurer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.ApplicationContext;
@@ -12,6 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.server.standard.ServerEndpointExporter;
+import top.dabaibai.redis.utils.RedisUtils;
+import top.dabaibai.websocket.listener.DistributedWebSocketListener;
+import top.dabaibai.websocket.operation.DefaultWebSocketSender;
+import top.dabaibai.websocket.server.CustomWebSocketConfigurer;
 
 /**
  * @description: websocket自动配置类

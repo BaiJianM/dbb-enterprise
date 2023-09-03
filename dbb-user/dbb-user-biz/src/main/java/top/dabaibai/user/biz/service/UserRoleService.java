@@ -1,7 +1,6 @@
 package top.dabaibai.user.biz.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.apache.ibatis.annotations.Param;
 import top.dabaibai.user.biz.entity.SysUserRole;
 
 import java.util.List;

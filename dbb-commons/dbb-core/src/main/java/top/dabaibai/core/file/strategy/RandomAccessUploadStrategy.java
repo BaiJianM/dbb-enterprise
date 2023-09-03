@@ -1,11 +1,11 @@
 package top.dabaibai.core.file.strategy;
 
-import top.dabaibai.core.file.utils.FilePathUtils;
-import top.dabaibai.core.pojo.dto.FileUploadDTO;
-import top.dabaibai.core.utils.FileUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import top.dabaibai.core.file.utils.FilePathUtils;
+import top.dabaibai.core.pojo.dto.FileUploadDTO;
+import top.dabaibai.core.utils.FileUtils;
 
 import java.io.File;
 import java.io.IOException;

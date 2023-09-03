@@ -1,10 +1,10 @@
 package top.dabaibai.user.biz.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import top.dabaibai.user.api.pojo.dto.DepartmentSearchDTO;
-import top.dabaibai.user.biz.entity.SysDepartment;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+import top.dabaibai.user.api.pojo.dto.DepartmentSearchDTO;
+import top.dabaibai.user.biz.entity.SysDepartment;
 
 import java.util.List;
 

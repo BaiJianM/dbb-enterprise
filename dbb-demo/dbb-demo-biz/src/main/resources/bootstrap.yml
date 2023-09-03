@@ -19,3 +19,7 @@ spring:
         server-addr: 10.211.55.7:8848
         group: DBB
         namespace: 8e1e0593-47ec-4bda-917f-89c6aef05457
+
+grpc:
+  server:
+    port: 9898

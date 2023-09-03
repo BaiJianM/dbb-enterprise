@@ -1,14 +1,14 @@
 package top.dabaibai.demo.biz.service.impl.queue.producer;
 
 import com.alibaba.fastjson.JSON;
-import top.dabaibai.demo.biz.entity.DoTest;
-import top.dabaibai.stream.DbbMQConstant;
-import top.dabaibai.stream.DbbMessage;
-import top.dabaibai.stream.producer.DbbProducer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.dabaibai.demo.biz.entity.DoTest;
+import top.dabaibai.stream.DbbMQConstant;
+import top.dabaibai.stream.DbbMessage;
+import top.dabaibai.stream.producer.DbbProducer;
 
 import java.util.concurrent.TimeUnit;
 

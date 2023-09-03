@@ -13,6 +13,12 @@
   ],
   "properties": [
     {
+      "name": "dbb.redis.spring-cache-properties",
+      "type": "top.dabaibai.redis.properties.CustomSpringCacheProperties",
+      "description": "Spring Cache自定义配置",
+      "sourceType": "top.dabaibai.redis.properties.RedisCustomProperties"
+    },
+    {
       "name": "dbb.redis.spring-cache-properties.caching-null-value",
       "type": "java.lang.Boolean",
       "description": "是否缓存空值，默认设置为false，防止缓存击穿",

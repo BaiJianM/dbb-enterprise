@@ -1,14 +1,12 @@
 package top.dabaibai.redis.listener;
 
-import org.springframework.boot.context.event.ApplicationStartedEvent;
-import org.springframework.context.event.ContextRefreshedEvent;
-import top.dabaibai.redis.annotation.RedisChannel;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.data.redis.connection.MessageListener;
 import org.springframework.lang.NonNull;
+import top.dabaibai.redis.annotation.RedisChannel;
 
 import java.util.HashMap;
 import java.util.Map;

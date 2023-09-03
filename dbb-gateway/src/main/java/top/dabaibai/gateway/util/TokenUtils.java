@@ -2,11 +2,11 @@ package top.dabaibai.gateway.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import top.dabaibai.gateway.bean.TokenUser;
-import top.dabaibai.user.api.pojo.vo.UserLoginVO;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import top.dabaibai.gateway.bean.TokenUser;
+import top.dabaibai.user.api.pojo.vo.UserLoginVO;
 
 import java.io.Serializable;
 import java.util.Date;
